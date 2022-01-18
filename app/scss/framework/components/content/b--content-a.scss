@@ -1,0 +1,31 @@
+.b--content-a{
+    p{
+        @include make-font-g();
+        color: map-get($color-options, e);
+        margin-bottom: $measure*3;
+        text-align: left;
+    }
+    a{
+        @include make-font-e();
+        font-weight: bold;
+    }
+    h3{
+        @include make-font-c();
+        text-align: left;
+        color: map-get($color-options, e);
+    }
+    hr{
+        background-color: map-get($color-options, d);
+        margin-bottom: $measure*3;
+        height: 1px;
+        @media all and ($viewport-type: $tabletp){
+            margin-bottom: $measure*3;
+        }
+    } 
+    & .hr--a{
+        margin-bottom: 72px;
+        @media all and ($viewport-type: $mobile){
+            margin-bottom: 56px;
+        }
+    }
+}

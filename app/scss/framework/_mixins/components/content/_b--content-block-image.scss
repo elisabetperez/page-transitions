@@ -1,0 +1,9 @@
+@mixin wp-block-image($_color-a){
+    .wp-block-image{
+        margin: $measure*5 0;
+        figcaption{
+            @include make-font-e();
+            color: $_color-a;
+        }
+    }
+}

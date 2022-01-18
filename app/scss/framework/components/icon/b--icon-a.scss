@@ -1,0 +1,46 @@
+
+.b--icon-a{
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height:2rem;
+    border:1px solid map-get($color-options, a);
+    background:transparent;
+    transition: all $time-a ease-in-out;
+    border-radius: 50%;
+    cursor: pointer;
+    &__media{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 1rem;
+        height: 1rem;
+
+        & path, & polygon, & rect{
+            fill: map-get($color-options, a);
+            transition: all $time-a ease-in-out;
+        }
+        & circle{
+            stroke: map-get($color-options, a);
+            transition: all $time-a ease-in-out;
+            stroke-width: 1;
+        }
+    }
+    &:hover{
+        background: map-get($color-options, a);
+        .b--icon-a__media{
+            & path, & polygon, & rect{
+                fill: map-get($color-options, f);
+            }
+            & circle{
+                stroke: map-get($color-options, f);
+                stroke-width: 1;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,6 @@
+@mixin make-gradient-blue {
+   background: linear-gradient(180.0deg, rgba(34, 82, 122, 1.0) 0%, rgba(2, 41, 91, 1.0) 100%);
+}
+@mixin make-gradient-red {
+   background: linear-gradient(180.0deg, rgba(238, 44, 35, 1.0) 0%, rgba(238, 75, 35, 1.0) 100%);
+}

@@ -1,0 +1,15 @@
+.b--card-c{
+    text-align: center;
+    &__media{
+        margin: $measure*2 $measure $measure*2 $measure;
+        @media all and ($viewport-type: $tabletl){
+            margin: $measure*2 0 $measure*2 0;  
+        }
+        @media all and ($viewport-type: $tabletp){
+            margin: $measure*2 0 $measure*2 0;  
+        }
+        @media all and ($viewport-type: $mobile){
+            margin: $measure*2 $measure $measure*2 $measure;  
+        }
+    }
+}

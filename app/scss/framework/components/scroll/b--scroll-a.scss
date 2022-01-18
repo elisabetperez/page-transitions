@@ -1,0 +1,18 @@
+.b--scroll-a{
+    display: flex;
+    align-items: center;
+    @media all and ($viewport-type: $tabletl) {
+        display: none;
+    }
+    &__title{
+        display: inline-block;
+        @include make-font-e();
+        color:map-get($color-options, f);
+        padding-right: $measure;
+    }
+    &__artwork{
+        fill: white;
+        width: $measure*4;
+    }
+}
+

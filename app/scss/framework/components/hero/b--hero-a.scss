@@ -1,0 +1,89 @@
+.b--hero-a{
+    position: relative;
+    padding: $measure*3 0;
+    height: 100vh;
+    @media all and ($viewport-type: $tabletl) {
+        height: 100%;
+    }
+    &__ft-items{
+        padding: $measure*12 0;
+        @media all and ($viewport-type: $tabletl) {
+            padding: $measure*4 0;
+            text-align: center;
+        }
+        &__title{
+            @include make-font-a();
+            padding-bottom: $measure*4;
+            @media all and ($viewport-type: $tabletl) {
+                padding-bottom: $measure*2;
+            }
+        }
+        &__subtitle{
+            @include make-font-b();
+        }
+        &__artwork{
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            border: 1px solid yellow;
+            @media all and ($viewport-type: $tabletl) {
+                position: relative;
+                margin: 0 auto;
+                top: 0;
+                right: 0;
+                transform-origin: center;
+                transform: scale(0.5);
+            }
+            &__motion{
+                border: 1px solid red;
+                width: 480px;
+                height: 580px;
+                animation-name: motionGlobe;
+                animation-duration: 4s;
+                animation-timing-function: steps(192);
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+    &__dash{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media all and ($viewport-type: $tabletl){
+           display: none;
+        }
+    }
+    // &::after{
+    //     border: 1px solid blueviolet;
+    //     position: absolute;
+    //     background: url('./../../../docs/img/wave.svg') no-repeat; 
+    //     content: '';
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: 999;
+    //     background-size: cover;
+    //     width: 100%;
+    //     height: 57px;
+    //     opacity: .2;
+    //     animation: waveOne 10s linear infinite;
+    // }
+    
+}
+
+@keyframes motionGlobe {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -92160px;
+    }
+}
+
+// @keyframes waveOne{
+//     0%{
+//         background-position: 1366px;
+//     }
+//     100%{
+//         background-position: 0;
+//     }
+// }

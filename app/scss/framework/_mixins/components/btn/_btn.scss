@@ -1,0 +1,17 @@
+// if mixin is needed add here.
+@mixin make-btn-a ($colortext, $colorbg){
+    @include make-font-e();
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background: map-get($color-options, $colorbg);
+    color: map-get($color-options, $colortext);
+    transition: all $time-a ease-in-out;
+    padding: $measure*2;
+    border-radius: $border-radius-b;
+}
+
+@mixin make-btn-interaction($colorhover){
+    background: map-get($color-options, $colorhover);
+}
+

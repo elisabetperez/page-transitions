@@ -1,0 +1,89 @@
+
+/* Font library */
+
+.f--font-a{
+  @include make-font-a();
+}
+.f--font-b{
+  @include make-font-b();
+}
+
+.f--font-c{
+  @include make-font-c();
+}  
+
+.f--font-d{
+  @include make-font-d()
+} 
+
+.f--font-e{
+  @include make-font-e()
+}
+
+.f--font-f{
+  @include make-font-f()
+}
+
+.f--font-g{
+  @include make-font-g()
+}
+/* ================================================= Here import the Fonts */
+
+//Proxima Nova Bold
+@font-face { 
+  font-family: 'Proxima Nova';
+  src: url('/../../../fonts/proxima-nova/ProximaNova-Bold.eot');
+  src: url('/../../../fonts/proxima-nova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/../../../fonts/proxima-nova/ProximaNova-Bold.woff') format('woff'),
+      url('/../../../fonts/proxima-nova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+// Proxima Nova regular
+@font-face { 
+  font-family: 'Proxima Nova';
+  src: url('/../../../fonts/proxima-nova/ProximaNova-Regular.eot');
+  src: url('/../../../fonts/proxima-nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/../../../fonts/proxima-nova/ProximaNova-Regular.woff') format('woff'),
+      url('/../../../fonts/proxima-nova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+//EB Garamon regular
+@font-face { 
+  font-family: 'EB Garamond';
+  // src: url('/../../../fonts/garamond/ProximaNova-Regular.eot');
+  src: url('/../../../fonts/garamond/EBGaramond-Regular.eot') format('embedded-opentype'),
+      url('/../../../fonts/garamond/EBGaramond-Regular.woff') format('woff'),
+      url('/../../../fonts/garamond/EBGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+//EB Garamon Bold
+@font-face { 
+  font-family: 'EB Garamond';
+  // src: url('/../../../fonts/garamond/ProximaNova-Regular.eot');
+  src: url('/../../../fonts/garamond/EBGaramond-Bold.eot') format('embedded-opentype'),
+      url('/../../../fonts/garamond/EBGaramond-Bold.woff') format('woff'),
+      url('/../../../fonts/garamond/EBGaramond-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+//SohneBreit Regular
+@font-face { 
+  font-family: 'SohneBreit';
+  src: url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett.eot');
+  //  url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett?#iefix') format('embedded-opentype'),
+   src:  url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett.woff') format('woff'),
+      url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+sup {
+  font-size: 10px;
+}

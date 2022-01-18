@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body{
+    background-color:map-get($color-options, a);
+    @include make-font-d();
+    font-weight: 300;
+    font-size: $font-body-size;
+    line-height: $line-height;
+    color: map-get($color-options, g);
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        padding-top: 50px;
+    }
+}
+
+code{
+    background-color: map-get($color-options, f);
+    color: map-get($color-options, b);
+    display: block;
+    margin-bottom: 20px;
+    padding:20px;
+    font-size: $font-body-size;
+    line-height: $line-height;
+    font-family:$type-a;
+}
+
+:focus {
+    outline: 0;
+}
+
+b,strong{ font-weight: bold;}
+
+ul, ol {
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+fieldset{
+    border: none;
+}
+
+//todos los input menos, range
+// input[type=search]::-webkit-search-decoration,
+// input[type=search]::-webkit-search-results-button,
+// input[type=search]::-webkit-search-results-decoration,
+input[type=search]::-webkit-search-cancel-button, // X que aparece en focus
+input[type=text],
+input[type=tel],
+input[type=number],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=search],
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=file],
+input[type=checkbox],
+input[type=radio],
+select,
+textarea,
+button{
+    // appearance: none;
+}
+
+main{
+    @media all and ($viewport-type: $tabletp){
+       margin-top: 50px;
+    }
+}
+
+textarea{
+    resize: vertical;
+}
+
+button, select, input[type=button], input[type=reset], input[type=submit]{
+    cursor: pointer;
+}
+
+button{
+    background: transparent;
+}
+// remove dotted outline/border in Firefox
+select:-moz-focusring {
+    color: transparent!important;
+    text-shadow: 0 0 0 map-get($color-options, d)!important;
+}

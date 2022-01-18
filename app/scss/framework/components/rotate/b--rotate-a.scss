@@ -1,0 +1,27 @@
+.b--rotate-a{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding-top: 1rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: map-get($color-options, b);
+    z-index: 1000;
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__icon{
+            @include make-icon-a($coloricon: b, $colorbg: c);
+            margin-bottom: $measure*2;
+        }
+        &__content{
+            @include make-font-c();
+            color: map-get($color-options, a);
+        }
+    }
+}

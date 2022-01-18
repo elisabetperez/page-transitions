@@ -1,0 +1,20 @@
+// if mixin is needed add here.
+@mixin make-pill ($colortext, $colorbg){
+    @include make-font-e();
+    padding-top:$measure/2;
+    padding-bottom:$measure/2;
+    padding-left: $measure*2;
+    padding-right: $measure*2;
+    margin-right: $measure;
+    margin-bottom: $measure;
+    display: inline-block;
+    border-radius: 25px;
+    text-align: center;
+    background: map-get($color-options, $colorbg);
+    color: map-get($color-options, $colortext);
+    transition: all $time-a ease-in-out;
+}
+
+@mixin make-pill-interaction($colorhover){
+    background:rgba(map-get($color-options, $colorhover), 0.5);
+}

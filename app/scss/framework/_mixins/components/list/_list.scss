@@ -1,0 +1,11 @@
+// if mixin is needed add here.
+
+// list a horizontal 
+@mixin make-li-a(){
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: $measure;
+       
+    }
+}
+

@@ -1,0 +1,218 @@
+{   
+    "meta": {
+        "lang": "en",
+        "title": "2022 Human Security Report | UNDP HDR",
+        "description": "The UNDP Human Development Report 2020 explores how human activity, environmental change, and inequality are changing how we work, live and cooperate.",
+        "og_tags": {
+            "title": { "name": "og:title", "content": "Human Development Report 2020 | UNDP HDR" },
+            "site_name": { "name": "og:site_name", "content": "Human Development Report 2020 | UNDP HDR" },
+            "type": { "name": "og:type", "content": "website" },
+            "url": { "name": "og:url", "content": "http://report.hdr.undp.org" },
+            "image": { "name": "og:image", "content": "http://report.hdr.undp.org/img/OG-English.jpg" },
+            "description": { "name": "og:description", "content": "The UNDP Human Development Report 2020 explores how human activity, environmental change, and inequality are changing how we work, live and cooperate." }
+        },
+        "twitter_tags":{
+            "card": { "name": "twitter:card", "content": "summary_large_image" },
+            "site": { "name": "twitter:site", "content": "@undp" },
+            "title": { "name": "twitter:title", "content": "Human Development Report 2020 | UNDP HDR" },
+            "description": { "name": "twitter:description", "content": "The UNDP Human Development Report 2020 explores how human activity, environmental change, and inequality are changing how we work, live and cooperate." },
+            "image_src": { "name": "twitter:image:src", "content": "http://report.hdr.undp.org/img/OG-English.jpg" }
+        },
+        "canonicals": {
+            "home": "http://report.hdr.undp.org",
+            "overview": "http://report.hdr.undp.org/intro.html",
+            "chapter_1": "http://report.hdr.undp.org/part-1.html",
+            "chapter_2": "http://report.hdr.undp.org/part-2.html",
+            "chapter_3": "http://report.hdr.undp.org/part-3.html"
+        }
+    },
+    "css":{
+        "home":"css/home.css",
+        "about":"css/about.css",
+        "common":"css/common/common.css",
+        "overview":"css/overview.css",
+        "chapter_1":"css/chapter-1.css",
+        "chapter_2":"css/chapter-2.css",
+        "chapter_3":"css/chapter-3.css"
+    },
+    "js":{
+        "home":"js/home.js",
+        "overview":"js/overview.js",
+        "chapter_1":"js/chapter-1.js",
+        "chapter_2":"js/chapter-2.js",
+        "chapter_3":"js/chapter-3.js"
+    },
+    "lang":{
+        "en":"./",
+        "fr":"./fr/",
+        "es":"./es/"
+    },
+    "logo": {
+        "logo_path": "img/logo.svg",
+        "logo_link": "https://www.undp.org/content/undp/en/home.html"
+    }, 
+    "index":{
+        "credit": "2022 Human Security Report",
+        "title": "New threats to human security in the Anthropocene:",
+        "subtitle":"Demanding greater solidarity",
+        "legend": "Home",
+        "menu_item": "Home"
+    },
+    "overview":{
+        "title": "2022 Human Security Report",
+        "legend": "Introduction",
+        "menu_item": "Introduction",
+        "links": {
+            "en": "./intro.html",
+            "fr": "./fr/intro.html",
+            "es": "./es/intro.html"
+        },
+        "body": {
+            "content_1": {
+                "p_1": "Covid-19 has affected everyone, imperiling every dimension of our well-being and injecting an acute sense of fear across the globe. It is not hard to understand how Covid-19 has led people to feel more insecure but fears were growing pre-pandemic. While the world was reaching unprecedented levels of the Human Development Index (HDI); an estimated 6 out of 7 people globally felt insecure in the years leading to the pandemic. And this feeling of insecurity was not only high—it had been growing in most countries with data, including a surge in some countries with the highest HDI values.",
+                "figure_1": {
+                    "text": "Figure 1 Perceptions of human insecurity are widespread worldwide",
+                    "link": "./img/lotties/figure_1_eng.json"
+                }
+            },
+            "content_2":{
+                "p_1": "For the first time, indicators of human development have declined—and drastically. In 2021, even with the availability of very unequally distributed Covid-19 vaccines, the economic recovery that started in many countries and the partial return to schools, the crisis deepened in health, with a drop in life expectancy at birth. And the HDI, adjusted for Covid-19, had to recover about five years of progress, according to new simulations (figure 2).",
+                "figure_2":{
+                    "text": "Figure 2 The Covid-19 pandemic has caused an unprecedented decline in Human Development Index values",
+                    "link": "https://datawrapper.dwcdn.net/3pwAr/8/"
+                }
+            },
+            "content_3":{
+                "p_1": "It is not hard to understand how Covid-19 has made people feel more insecure. But what accounts for the startling split between improvements in wellbeing achievements and declines in people’s perception of security? That is the motivating question for this Report. In addressing it, we hope to avoid returning to pathways of human development with human insecurity."
+            }
+        }
+    },
+    "chapter_1":{
+        "title": "Renewing human development for the Anthropocene",
+        "legend": "Part I",
+        "menu_item": "Part I: Renewing human development for the Anthropocene",
+        "links": {
+            "en": "./part-1.html",
+            "fr": "./fr/part-1.html",
+            "es": "./es/part-1.html"
+        },
+        "body": {
+            "content_1": {
+                "p_1": "Behind this development-security disconnect looms the Anthropocene context. Development approaches with a strong focus on economic growth over equitable human development have led to stark and growing inequalities and destabilized processes at the planetary scale. Our pursuit of development has neglected our embeddedness in nature, leading to new threats as a byproduct of development: worsening health, increased food insecurity, and more frequent disasters. Climate change alone—beyond the effect of pollution or zoonotic diseases—is expected to have significant effects on mortality. By 2100 the number of estimated deaths associated with climate change (in a scenario with very high GHG emissions)  could be comparable to some of the leading deaths causes today (figure 3).",
+                "figure_3":{
+                    "text": "Figure 3 In a very high emissions scenario, some regions of the world might face climate-change induced mortality rates similar to the main causes of deaths today",
+                    "link": "./img/lotties/figure_3_eng.json"
+                }  
+            },
+            "content_2": {
+                "p_1": "The Report revisits the human security concept to understand what it implies for the Anthropocene context."
+            },
+            "content_3": {
+                "p_1": "When introduced in 1994, the human security approach refocused the security debate from territorial security to people’s security. This idea, which the UN General Assembly endorsed in 2012, invited security scholars and policymakers to look beyond protecting the nation-state to protecting what we care most about in our lives: our basic needs, our physical integrity, our human dignity. It emphasized the importance of everyone’s right to freedom from fear, freedom from want and freedom from indignity. It highlighted the close connection among security, development and the protection and empowerment of individuals and communities.",
+                "p_2": "In part 2, this Report explores how the new generation of interacting threats, playing out in the new context of the Anthropocene: the downsides of digital technology, violent conflict, horizontal inequalities, and evolving challenges to healthcare systems (figure 4).",
+                "p_3": "It is the interconnected nature of these threats, which calls for a new approach that goes beyond tackling them individually when designing or evaluating policy.",
+                "figure_4":{
+                    "text": "Figure 4 The new generation of human security threats",
+                    "link": "./img/lotties/figure_4_eng.json"
+                }
+            },
+            "content_4": {
+                "p_1": "This Report argues for an expansion of the human security concept, adding solidarity to the human security strategies of protection and empowerment proposed by the Ogata-Sen Report (2013)."
+            },
+            "content_5": {
+                "p_1": "Solidarity recognizes that human security in the Anthropocene must now go beyond securing individuals and their communities; to consider systematically the interdependence across people and between people and the planet. It is protection, empowerment and solidarity working together that advances human security in the Anthropocene context.",
+                "p_2": "Alarmingly, the Report also finds that perceptions of human insecurity are associated with low interpersonal trust, independently of one’s financial situation. ",
+                "p_3": "In addressing human insecurity how do we attend to the conditions of trust—across people, between people and institutions, across countries?",
+                "p_4": "This Report takes the view that agency lies at the core of an expanded human security framework (figure 5). Agency reminds us that wellbeing achievements alone are not all we should consider when evaluating policies or assessing progress. Agency will also help avoid the pitfalls of partial solutions, such as delivering protection with no attention to disempowerment or committing to solidarity while leaving some lacking protection.",
+                "figure_5":{
+                    "text": "Figure 5 Enriching human security for the Anthropocene",
+                    "link": "./img/lotties/figure_5_eng.json"
+                }
+            }
+        }
+    },
+    "chapter_2":{
+        "title": "Acting for change",
+        "legend": "Part II",
+        "menu_item": "Part II: Acting for a change",
+        "links": {
+            "en": "./part-2.html",
+            "fr": "./fr/part-2.html",
+            "es": "./es/part-2.html"
+        },
+        "body": {
+            "content_1": {
+                "t_1": "Chapter 3 Technology's new threats to human security",
+                "p_1": "While digital technologies can expand human freedoms, they can also have unintended consequences challenging human security. Chapter 3 explores some of the threats to human security posed by digital technologies First, it explores how common cybersecurity attacks and new technological tools can undermine human security. It then discusses the potential for human rights to be compromised in response to cyberharm and how the increasing reliance on artificial intelligence (AI) algorithms can erode human security. Finally, it discusses how uneven access to technology impacts human security, as seen clearly in the uneven access to Covid-19 vaccines.",
+                "t_2": "Chapter 4 Unearthing the human dimension of violent conflict",
+                "p_2": "Today, conflict levels are up and about 1.2 billion people live in conflict-affected areas, 560 million of them in countries not classified as fragile contexts (figure 6). More people, in more places, are experiencing some variation of conflict, and a majority of the global population feel worried about violence. Chapter 4 aims to center conflict analysis on people, rather than on the contestations. Taking well established conflict-definitions as a starting point, it expands the analysis to look at compounding human security threats and people living in conflict-affected areas. In doing so it shows how a new generation of human security, based on protection, empowerment and solidarity can shed light on blind-spots support the building of just and peaceful societies.",
+                "figure_6":{
+                    "text": "People within 50 kilometers of fighting",
+                    "link": "https://datawrapper.dwcdn.net/7v0kR/6/"
+                },
+                "t_3": "Chapter 5 Inequalities and the assault on human dignity",
+                "p_3": "The persistence of inequalities in human development and discrimination have a direct bearing on dignity. Inequalities in human dignity are not just a moral issue but they are globally disestablishing, having direct and practical effects on human development. Chapter 5 dives into the different experiences of horizontal inequalities linked to the overlapping identities. It describes the importance of perceiving humans as agents, not victims, when analyzing the way different social groups experience challenges to human security and structural causes that can lead to discrimination and violence of these groups. And a focus on agency shows how eliminating horizontal inequalities not only is a matter of justice for those discriminated against or excluded, but also enriches communities and society more broadly, because agency is central for broader processes of social change. An agency-focused approach also recognizes that people hold multiple identities at once. That people are simultaneously members of different collectives provides for solidarity to be built across groups over shared values and goals. A foundation of agency enhances space for solidarity as people are better able to reason about, strategize and participate in actions that transform society.",
+                "figure_7":{
+                    "text": "Gender inequality is one of the most widespread horizontal inequalities",
+                    "link": "./img/figures/figure_7_en.jpg"
+                },
+                "t_4": "Chapter 6 Healthcare systems outmatched by new human security challenges",
+                "p_4": "While the past few decades have seen major improvements in global health by standard indicators; a new generation of challenges has come into play, in the form of pandemics, the predominance of Non-Communicable Diseases and the mismatch between health challenges and healthcare systems. Chapter 6 explores this gap between health threats and healthcare systems’ ability to meet them. To measure the extent to which healthcare systems can be characterized as universal, the report introduces a new Healthcare Universalism Index (HUI). The HUI which is based on a comprehensive concept of universalism, comprised not only on effective coverage but also of two additional components: generosity and equity. The HUI has improved over time: between 1995 and 2017 the world's HUI increasing by almost 8 points. But gaps in universalism between different HDI groups are widening on average (figure 8).",
+                "p_5": "The chapter then covers the uneven recovery from COVID-19, the evolving burden on healthcare systems, how poor healthcare systems foster human insecurity, and the opportunity to create a new generation of human security through universalism. Re-evaluating and reforming health systems with a human security lens reveals that healthcare systems are among the most promising spaces for advancing a new generation of human security strategies."
+            },
+            "content_2": {
+                "t_1": "Conclusion",
+                "p_1": "Permanent and universal attention to an enriched concept of human security can end the development-with-human insecurity pathways that have resulted in the Covid-19 pandemic, climate change, and the broader predicaments of the Anthropocene.",
+                "p_2": "In the Anthropocene context it is imperative to go beyond fragmented efforts to deal with climate change, biodiversity loss, conflicts, migration and refugees, pandemics, and data protection. To pay systematic, permanent, and universal attention to solidarity – not as optional charity, but as a call to pursue human security using “the eyes of humankind.",
+                "figure_8":{
+                    "text": "Progress with inequality: widening gaps in healthcare over time",
+                    "link": "https://datawrapper.dwcdn.net/B0EmR/3/"
+                }
+            }
+        }
+    },
+    "download":{
+        "label": "Download report",
+        "link": "http://hdr.undp.org/en/sites/default/files/hdr2020.pdf",
+        "cta_title": "Download",
+        "cta_label": "Donwload the report"
+    },
+    "share_links":{
+        "facebook": "https://www.facebook.com/sharer/sharer.php?u=http://report.hdr.undp.org/",
+        "linkedin": "http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Freport.hdr.undp.org&title=The%20UNDP%20Human%20Development%20Report%202020%20explores%20how%20human%20activity%2C%20environmental%20change%2C%20and%20inequality%20are%20changing%20how%20we%20work%2C%20live%20and%20cooperate.",
+        "twitter": "https://twitter.com/intent/tweet?url=http%3A%2F%2Freport.hdr.undp.org&text=The%20UNDP%20Human%20Development%20Report%202020%20explores%20how%20human%20activity%2C%20environmental%20change%2C%20and%20inequality%20are%20changing%20how%20we%20work%2C%20live%20and%20cooperate.",
+        "mail": "mailto:?subject=Human Development Report 2020 | UNDP HDR&body=The UNDP Human Development Report 2020 explores how human activity, environmental change, and inequality are changing how we work, live and cooperate. http://report.hdr.undp.org"
+    },
+    "explore_cta": "Explore",
+    "alts":{
+        "logo": "UNDP logo",
+        "cover": {
+            "intro": "Introduction Cover",
+            "part_1": "Part 1 Cover",
+            "part_2": "Part 2 Cover",
+            "part_3": "Part 3 Cover"
+        },
+        "diagrams":{
+            "intro_1": "Structure of the 2020 Human Development Report",
+            "part_1": {
+                "d1" : "Figure 1.1: Planetary and social imbalances reinforce each other",
+                "d2" : "Figure 3.1: Key outcomes to guide action in the Anthropocene"
+            },
+            "part_2":{
+                "i1": "Social norms",
+                "i2": "Incentives for change",
+                "i3": "Nature-based solutions",
+                "d1": "Figure 6.1 Nature-based solutions and the virtuous relinking of people and the planet"
+            },
+            "part_3": {
+                "d1" : "Pressure-adjusted Human Development Index Value",
+                "d2" : "Planet-adjusted HDI based on Carbon emissions (production) and Material Footprint"
+            }
+        }
+    },
+    "iframes":{
+        "test_1": "https://datawrapper.dwcdn.net/3pwAr/1/",
+        "test_2": "https://datawrapper.dwcdn.net/7v0kR/1/",
+        "test_3": "https://datawrapper.dwcdn.net/B0EmR/1/"
+    }
+}

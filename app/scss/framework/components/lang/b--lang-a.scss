@@ -1,0 +1,78 @@
+.b--lang-a{
+    margin-bottom: $measure*4;
+    &__list-item{
+        &:first-child{
+            border:none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        display:inline-block;
+        border-left:1px solid map-get($color-options, e);
+        padding-left: $measure;
+        margin-left: $measure;
+        &__link{
+            @include make-font-e();
+            @include make-link-a($colortext: e);
+            &--is-active,&:hover{
+                color: map-get($color-options, d)
+            }
+        }
+    } 
+    &--secondary &{
+        &__list-item{
+            border-left:1px solid map-get($color-options, f);
+            &:first-child{
+                border-left: none;
+            }
+            &__link{
+                @include make-font-d();
+                font-weight: 400;
+                padding-bottom: 1px;
+                @include make-link-a($colortext: f);
+                &--is-active,&:hover{
+                    border-bottom: 1px solid map-get($color-options, f);
+                    color: map-get($color-options, f)
+                }
+            }
+         }
+    }
+    &--secondary {
+        margin-bottom: $measure;
+        @media all and ($viewport-type: $tabletl){
+            text-align: center;
+        }
+    }
+}
+
+//language active
+html[lang="en"] {
+    .b--lang-a.b--lang-a--secondary .b--lang-a__list-item:first-child a{
+        color: map-get($color-options, f);
+        border-bottom: 1px solid map-get($color-options, f);
+        padding-bottom: 1px;
+    }
+    .b--lang-a .b--lang-a__list-item:first-child a{
+        color: map-get($color-options, d);
+    }
+}
+html[lang="fr"] {
+    .b--lang-a.b--lang-a--secondary .b--lang-a__list-item:nth-child(2) a{
+        color: map-get($color-options, f);
+        border-bottom: 1px solid map-get($color-options, f);
+        padding-bottom: 1px;
+    }
+    .b--lang-a .b--lang-a__list-item:nth-child(2) a{
+        color: map-get($color-options, d);
+    }
+}
+html[lang="es"] {
+    .b--lang-a.b--lang-a--secondary .b--lang-a__list-item:last-child a{
+        color: map-get($color-options, f);
+        border-bottom: 1px solid map-get($color-options, f);
+        padding-bottom: 1px;
+    }
+
+    .b--lang-a .b--lang-a__list-item:last-child a{
+        color: map-get($color-options, d);
+    }
+}

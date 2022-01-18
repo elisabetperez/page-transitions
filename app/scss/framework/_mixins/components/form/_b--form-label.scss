@@ -1,0 +1,7 @@
+@mixin make-label-a($colorlabel){
+    @include make-font-e();
+    text-transform: uppercase;
+    margin-bottom: $measure;
+    display: block;
+    color: map-get($color-options, $colorlabel);
+}

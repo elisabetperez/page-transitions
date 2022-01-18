@@ -1,0 +1,15 @@
+.b--social-a{
+    @media all and ($viewport-type: $tabletp){
+        text-align: center;
+    }
+    &__list-item{
+        @include make-li-a();
+        &__link{
+            display: block;
+        }
+    }
+}
+
+
+
+

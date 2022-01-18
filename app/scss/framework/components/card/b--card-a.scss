@@ -1,0 +1,125 @@
+.b--card-a{
+    margin:0 auto;
+    border-radius: $measure;
+    min-height: $measure*50;
+    display:block;
+    text-decoration: none;
+    margin-bottom: $measure*9;
+    position: relative;
+    border-bottom:10px solid map-get($color-options, b);
+    @media all and ($viewport-type: $tabletp){
+        min-height: $measure*25;
+        margin-bottom: $measure*4!important;
+        overflow: hidden;
+    }
+    
+    &::after{
+        content: "";
+        background:map-get($color-options, b);
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 90;
+        border-radius: $measure $measure 0px 0px;
+        transition: all $time-b ease-out;
+    }
+    &__hd{
+        padding:0px $measure*7 0px $measure*4;
+        position: relative;
+        z-index: 100;
+        @media all and ($viewport-type: $mobile){
+            padding:0px $measure*4 0px $measure*4;
+        }
+        &__subtitle{
+            padding-top:3rem;
+            padding-bottom: 1.25rem;
+            color:map-get($color-options, f);
+            @include make-font-d();
+            font-weight: 400;
+            @media all and ($viewport-type: $mobile){
+                padding-top:2rem;
+            }
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 7.5px;
+                background:map-get($color-options, b);
+                z-index: 100;
+                margin-right: 8px;
+             }
+        }
+        &__title{
+            min-height: $measure*25;
+            @include make-font-c();
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin-bottom: $measure*2;
+            color:map-get($color-options, g);
+            @media all and ($viewport-type: $tabletl){
+                min-height: $measure*17;
+            }
+            @media all and ($viewport-type: $tabletp){
+                min-height: $measure*13;
+                font-size: 20px;
+            }
+        }
+    }
+    &__artwork{
+        & img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+    &:hover{
+        &::after{
+            opacity: .7;
+        }
+    }
+    @media all and ($viewport-type: $tabletp){
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+
+    &--second{
+        border-bottom:10px solid map-get($color-options, c); 
+        &::after{
+            background:map-get($color-options, c);
+        }
+    }
+    &--second &{
+        &__hd{
+            &__subtitle{
+                &::before{
+                    background:map-get($color-options, c);
+                }
+            }
+        }
+    }
+    &--third{
+        border-bottom:10px solid map-get($color-options, d); 
+        &::after{
+            background:map-get($color-options, d);
+        }
+        @media all and ($viewport-type: $tabletp){
+            margin-bottom: $measure*8!important;
+        }
+    }
+    &--third &{
+        &__hd{
+            &__subtitle{
+                &::before{
+                    background:map-get($color-options, d);
+                }
+            }
+        }
+    }
+    
+   
+}

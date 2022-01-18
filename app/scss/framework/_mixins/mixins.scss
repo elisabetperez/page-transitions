@@ -1,0 +1,36 @@
+/* foundation mixins*/
+@import './foundation/font/font';
+@import './foundation/grid/grid'; //import row , columns
+@import './foundation/aspect-ratio/ar';
+/* foundation mixins*/
+
+/* components*/
+@import './components/section/section';
+@import './components/block-text/block-text';
+@import './components/link/link';
+@import './components/btn/btn';
+@import './components/icon/icon';
+@import './components/pill/pill';
+@import './components/list/list';
+@import './components/scrollbar/scrollbar';
+
+// @import './components/form/_fg';
+// @import './components/form/_label';
+// @import './components/form/_fe';
+// @import './components/form/_generic-input';
+// @import './components/form/_textarea';
+// @import './components/form/_radial';
+// @import './components/form/_error';
+
+@import './components/form/_b--form-group'; 
+@import './components/form/_b--form-label'; 
+@import './components/form/_b--form-input'; 
+@import './components/form/_b--form-input-icon';
+@import './components/form/b--form-file';
+
+
+
+
+/* utilities */   
+@import './utilities/double-layer/double-layer'; 
+@import './utilities/gradient/gradient'; 

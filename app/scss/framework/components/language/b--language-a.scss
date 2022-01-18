@@ -1,0 +1,20 @@
+.b--language-a{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    @media all and ($viewport-type: $tabletl){
+        text-align: center;
+        margin-bottom: $measure*2;
+        display: block;
+    } 
+    &__wrapper{
+        &__title{
+            @include make-font-c();
+            color: map-get($color-options, f);
+            font-weight: 400;
+            @media all and ($viewport-type: $tabletl){
+                text-align: center;
+            }
+        }
+    }
+}

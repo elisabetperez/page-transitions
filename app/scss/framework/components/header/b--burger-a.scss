@@ -1,0 +1,29 @@
+.b--burger-a{
+    display:inline-block;
+    height: 10px;
+    width:30px;
+    height: 30px;
+    pointer-events: none;
+    @media all and ($viewport-type: $tabletp){
+        pointer-events: all;
+    }
+    &__item{
+        &:first-child{margin-top: 0;}
+        background:map-get($color-options, e);
+        height: 2px;
+        transition: all $time-a ease-in-out;
+        display: block;
+        margin-top: $measure;
+    }
+    &--is-active{
+        .b--burger-a__item:first-child{
+            transform: translate(2px, 12px) rotate(45deg)
+        }
+        .b--burger-a__item:nth-child(2){
+            opacity: 0;;
+        }
+        .b--burger-a__item:last-child{
+            transform: translate(1px, -8px) rotate(-45deg)
+        }
+    }
+}

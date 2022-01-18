@@ -1,0 +1,52 @@
+@mixin lists-and-paragraphs( $_color-a, $_color-b){
+    ul,ol{
+        margin-bottom: $measure*3;
+        li{
+            margin-bottom: $measure*2;
+            @include make-font-d();
+            color:$_color-a;
+            padding-left:$measure*3;
+        }
+    }
+    ul{
+        list-style: none; /* Remove default bullets */
+        // list-style-type: disc;
+        margin-left: $measure*1.8;
+        li{
+            position: relative;
+            padding-left: $measure*2;
+            &:before{
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: $_color-b; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1em; /* Also needed for space (tweak if needed) */
+                margin-left: -2rem; /* Also needed for space (tweak if needed) */
+                margin-right: $measure*2;
+            }
+            //Nested ul
+            ul{
+                margin-top: $measure*2;
+                margin-bottom: $measure;
+                margin-left: $measure*1.8!important;
+                li{ 
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    ol{
+        margin-left: $measure*1.8;
+        list-style-type: decimal;
+        li{
+            padding-left: 0px;
+        }    
+    }
+    p{
+        @include make-font-d();
+        color:$_color-a; 
+        margin-bottom: $measure*3;
+    }
+    em{font-style: italic;}
+    strong{font-weight: bold;}
+}

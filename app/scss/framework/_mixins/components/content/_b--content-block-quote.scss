@@ -1,0 +1,22 @@
+@mixin wp-block-quote($_color-a, $_color-b){
+    .wp-block-quote, blockquote{
+        border-top: 1px solid map-get($color-options, h); 
+        border-bottom: 1px solid map-get($color-options, h); 
+        padding: $measure*3 $measure*7;
+        margin-bottom: $measure*3;
+        @media all and ($viewport-type: $tabletp){
+            padding: $measure*3 0px;
+        }
+        p{
+            @include make-font-d();
+            font-style: normal;
+            color: $_color-a;
+            margin-bottom: $measure*2;
+        }
+        cite{
+            @include make-font-d();
+            font-style: normal;
+            color: $_color-b;
+        }
+    } 
+}

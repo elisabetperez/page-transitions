@@ -1,0 +1,9 @@
+@mixin make-link-a($colortext) {
+    color: map-get($color-options, $colortext);
+    text-decoration: none;
+    transition: all $time-a ease-in-out;
+}
+
+@mixin make-link-a-interaction(){
+    text-decoration: underline;
+}

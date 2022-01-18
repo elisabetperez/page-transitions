@@ -1,0 +1,44 @@
+.b--cta-b{
+    background:map-get($color-options, a);
+    height: 350px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    &__content{
+        text-align: center;
+        padding: $measure*13 0;
+        @media all and ($viewport-type: $tabletl){
+            padding: $measure*15 0;
+        }
+        &__title{
+            color:map-get($color-options, f);
+            @include make-font-a();
+            padding-bottom: $measure*2;
+        }
+        &__link{
+            @include make-font-e();
+            @include make-link-a($colortext: f);
+            &--is-active,&:hover{
+                color: map-get($color-options, d)
+            }
+        }
+        &__btn{
+            @include make-btn-a($colortext: f, $colorbg: b);
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    &__artwork{
+        display: flex;
+        justify-content: center;
+        & img {
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            min-width: 100%;
+            max-width: inherit;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin make-generic-input($colortext, $colorbg, $colorborder,$paddingX,$paddingY,$fontSize) {
+    font-size: $fontSize;
+    padding: $paddingY $paddingX;
+    border:1px solid map-get($color-options, $colorborder);
+    background:transparent;
+    width:100%;
+    color: map-get($color-options, $colortext);
+    &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
+        -webkit-text-fill-color: map-get($color-options, $colortext);
+        -webkit-box-shadow: 0 0 0px 1000px map-get($color-options, $colorbg) inset;
+    }
+}

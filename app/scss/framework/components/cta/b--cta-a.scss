@@ -1,0 +1,61 @@
+.b--cta-a{
+    background:map-get($color-options, c);
+    height: 350px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    border-radius: 0px 176px 0px 0px;
+    &__content{
+        padding: $measure*10 0;
+        &__title{
+            color:map-get($color-options, f);
+            @include make-font-c();
+            padding-bottom: $measure*2;
+            
+            @media all and ($viewport-type: $mobile){
+                width: 80%;
+            }
+        }
+        &__subtitle{
+            padding-bottom: $measure*4;
+            @include make-font-d();
+            color:map-get($color-options, f);
+        }
+        &__link{
+            @include make-font-d();
+            text-decoration: none;
+            color:map-get($color-options, f);
+            display: flex;
+            text-transform: uppercase;
+            align-items: center;
+            &:before{
+                transition: all .3s ease-in-out;
+                content:"";
+                position:relative;
+                transform: scaleX(1);
+                transform-origin: center left;
+                min-width:25px;
+                height: 2px;
+                background:map-get($color-options, f);
+                display: inline-block;
+                margin-right: 10px;
+                overflow: hidden;
+            }
+        }
+    }
+    &__artwork{
+        & img {
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+        }
+    }
+    &:hover{
+        .b--cta-a__content__link:before{
+          animation: tweenLine $time-b ;
+        }  
+    }
+    &--second {
+        background:map-get($color-options, d);
+    }
+}

@@ -1,0 +1,28 @@
+.b--nav-a{
+    &__list-group{
+        list-style: none;
+        &__list-item{
+            position: relative;
+            margin-bottom: $measure*2;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+            &__link{
+                @include make-font-e();
+                @include make-link-a($colortext: e);
+                &:hover,&--is-active{
+                    @include make-link-a($colortext: d);
+                }
+            }
+            &__btn{
+                @include make-btn-a($colortext: f, $colorbg: b);
+                margin-top: $measure*4;
+                display: block;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}

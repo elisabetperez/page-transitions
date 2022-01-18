@@ -1,0 +1,22 @@
+// container
+// container fluid
+.f--container {
+    max-width: $g-container-width;
+    @media all and ($viewport-type: $laptop){
+        max-width: 90%;
+    }
+    @media all and ($viewport-type: $mobile){
+      max-width: 95%;
+    }
+    margin: 0 auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    &--fluid {
+      margin: 0 auto;
+      max-width: 1900px;
+      @media all and ($viewport-type: 2000px){
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+}

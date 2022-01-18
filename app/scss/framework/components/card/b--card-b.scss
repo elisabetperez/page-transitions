@@ -1,0 +1,93 @@
+.b--card-b{
+    padding: $measure*7 $measure*2;
+    border-top:12px solid map-get($color-options, c);
+    border-bottom:12px solid map-get($color-options, c);
+    background:map-get($color-options, e);
+    display: block;
+    text-decoration: none;
+    &--second{
+        border-top:12px solid map-get($color-options, h);
+        border-bottom:12px solid map-get($color-options, h); 
+    }
+    &--second{
+        border-top:12px solid map-get($color-options, h);
+        border-bottom:12px solid map-get($color-options, h); 
+    }
+    &--third{
+        border-top:12px solid map-get($color-options, b);
+        border-bottom:12px solid map-get($color-options, b); 
+    }
+    @media all and ($viewport-type: $tabletl){
+        padding: $measure*2 $measure*2;
+    }
+    &__content{
+        @include make-row();
+        align-items: center;
+        &__item-left{
+            @include make-order(0);
+            @include make-col(6);
+            @media all and ($viewport-type: $mobile){
+                @include make-order(1);
+                @include make-col(12);
+            }
+        }
+        &__item-right{
+            @include make-order(1);
+            @include make-col(6);
+                @media all and ($viewport-type: $mobile){
+                    @include make-order(0);
+                    @include make-col(8);
+                    margin-bottom: $measure*2;
+                }
+            &__subtitle{
+                @include make-font-d();
+                text-transform: uppercase;
+                margin-bottom: $measure*2;
+            }
+            &__title{
+                @include make-font-b();
+                margin-bottom: $measure*2;
+                color:map-get($color-options, g);
+            }
+            &__link{
+                @include make-font-d();
+                text-decoration: none;
+                color:map-get($color-options, a);
+                display: flex;
+                text-transform: uppercase;
+                align-items: center;
+                &:before{
+                    transition: all .3s ease-in-out;
+                    content:"";
+                    position:relative;
+                    transform: scaleX(1);
+                    transform-origin: center left;
+                    min-width:25px;
+                    height: 2px;
+                    background:map-get($color-options, a);;
+                    display: inline-block;
+                    margin-right: 10px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    &:hover{
+      .b--card-b__content__item-right__link:before{
+        animation: tweenLine $time-b ;
+      }  
+    }
+    & img{
+        width: 100%;
+    }
+}
+
+@keyframes tweenLine {
+    0%{
+       transform:scaleX(0)
+    }
+    
+    100% {
+        transform:scaleX(1)
+    }
+  }

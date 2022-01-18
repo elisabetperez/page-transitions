@@ -1,0 +1,12 @@
+@mixin make-input-icon() {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 0 1rem;
+    pointer-events: none;
+    background:grey;
+    width: 30px;
+    height: 30px;
+}

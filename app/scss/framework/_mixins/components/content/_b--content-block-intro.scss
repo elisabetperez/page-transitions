@@ -1,0 +1,11 @@
+@mixin wp-block-intro($_color-a){
+    .intro{
+        margin-bottom: $measure*2;
+        padding-bottom: $measure*2;
+        border-bottom: 1px solid map-get($color-options, h); 
+        h2{
+            @include make-font-c();
+            color: $_color-a;
+        }
+    }
+}

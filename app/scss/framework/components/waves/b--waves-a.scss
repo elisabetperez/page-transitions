@@ -1,0 +1,42 @@
+.b--waves-a{
+    overflow: hidden;
+    opacity: .4;
+    position: relative;
+    &__media{
+        min-width: 150%;
+        &--primary{
+            position: relative;
+            animation: waveone 10s linear infinite;
+        }
+        &--secondary{
+            position: absolute;
+            bottom: 0;
+            animation: wavetwo 10s linear infinite;
+        }
+    }
+    
+}
+
+@keyframes waveone{
+    0% {
+        left: -15%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: -15%;    
+    }
+}
+
+@keyframes wavetwo{
+    0% {
+        right: -30%;
+    }
+    50% {
+        right: 0%;
+    }
+    100% {
+        right: -30%;    
+    }
+}

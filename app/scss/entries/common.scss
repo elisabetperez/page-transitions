@@ -1,0 +1,34 @@
+/* VARS & MIXINS */
+@import './../framework/_vars/vars';
+@import './../framework/_mixins/mixins';
+
+/* FOUNDATION */
+/* color | background | aspect ratio | grid*/
+@import './../framework/foundation/foundation'; 
+
+/* UTILITIES */
+@import './../framework/utilities/utilities';
+
+
+/* CORE COMPONENTS START */
+@import './../framework/components/header/b--header-a.scss';
+
+@import './../framework/components/lang/b--lang-a.scss';
+@import './../framework/components/header/b--brand-a.scss';
+@import './../framework/components/footer/b--footer-a.scss';
+@import './../framework/components/social/b--social-a.scss';
+@import './../framework/components/icon/b--icon-a.scss';
+
+@import './../framework/components/lazy/b--lazy-a.scss';
+
+@import './../framework/components/section/b--section-a.scss';
+@import './../framework/components/block-text/b--bt-a.scss';
+@import './../framework/components/block-text/b--bt-b.scss';
+@import './../framework/components/block-text/b--bt-c.scss';
+
+@import './../framework/components/content/b--content-a.scss';
+@import './../framework/components/bi-a/b--bi-a.scss';
+
+@import './../framework/components/media/b--media-a.scss';
+
+

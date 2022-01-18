@@ -1,0 +1,15 @@
+.b--header-a{
+    position:fixed;
+    left:0; top:0;
+    width:100%;
+    background:map-get($color-options, f);
+    right:0;
+    padding:$measure*2;
+    z-index: 100;
+    text-align: right;
+    opacity: 0;
+    @media all and ($viewport-type: $tabletp){
+        pointer-events: all;
+        opacity: 1;
+    }
+}

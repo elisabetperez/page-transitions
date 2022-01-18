@@ -1,0 +1,45 @@
+
+.b--layout-a{
+    &__hd{
+        position:fixed;
+        height: 100vh;
+        padding: $measure*6 $measure*4;
+        z-index: 20;
+        background:#FFFFFF; // change to color options
+        border-right:1px solid map-get($color-options, f); // change to color options
+        width:18%;
+        transition: all .3s;
+        @media all and ($viewport-type: $laptop){
+            width:22%; 
+            
+        }
+        @media all and ($viewport-type: $tabletl){
+            width:25%; 
+            padding: $measure*5 $measure*3;
+        }
+        @media all and ($viewport-type: $tabletp){
+           width: 50%;
+           right:-50%;
+        }
+        @media all and ($viewport-type: $mobile){
+            width: 100%;
+            right:-100%;
+         }
+        &--is-active{
+            right:0;
+        }
+    }   
+    &__content{
+        padding-top: $measure*6;
+        margin-left: 18%;
+        @media all and ($viewport-type: $laptop){
+            margin-left:22%; 
+        }
+        @media all and ($viewport-type: $tabletl){
+            margin-left:25%; 
+        }
+        @media all and ($viewport-type: $tabletp){
+            margin-left:0;
+        }
+    }
+}

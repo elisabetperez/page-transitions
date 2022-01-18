@@ -1,0 +1,29 @@
+@mixin make-icon-a($coloricon, $colorbg) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none!important;
+    width: $measure*6;
+    height: $measure*6;
+    border-radius: 50%;
+    font-size: 1rem;
+    color:map-get($color-options, $coloricon);
+    background: map-get($color-options, $colorbg);
+    transition: all $time-a ease-in-out;
+}
+
+@mixin make-icon-a-interaction($colorbg){
+    background: map-get($color-options, $colorbg);
+}
+
+@mixin make-icon-b($coloricon, $colorbg) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none!important;
+    width: $measure*4;
+    height: $measure*4;
+    border-radius: 50%;
+    color:map-get($color-options, $coloricon);
+    background: map-get($color-options, $colorbg);
+}

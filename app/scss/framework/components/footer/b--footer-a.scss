@@ -1,0 +1,9 @@
+.b--footer-a{
+    padding: $measure*2 0px;
+    padding-left: $measure*7;
+    background:map-get($color-options, f); 
+    @media all and ($viewport-type: $tabletp){
+       padding-left: 0;
+    }
+    
+}

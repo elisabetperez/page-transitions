@@ -1,0 +1,16 @@
+.b--controls-a{
+    margin-top: $measure*2;
+    margin-bottom: $measure;
+    text-align: center;
+    &__btn{ 
+        display: inline-block;
+        &--next{
+            margin-left: $measure/2;
+        } 
+        &--prev{
+            margin-right: $measure/2;
+        } 
+    }
+}
+
+

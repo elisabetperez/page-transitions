@@ -1,0 +1,7 @@
+.b--animation-part3{
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+       & svg {
+           min-height: 340px;
+       }
+    }
+}
