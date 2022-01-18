@@ -21,7 +21,13 @@ class Home {
         });
 
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {
-          manageStyles(to);
+          this.manageStyles(to);
+          if (location.anchor) {
+            const el = document.querySelector(location.anchor);
+            if (el) {
+                window.scrollTo(el.offsetLeft, el.offsetTop);
+            }
+          }
         });
 
     }
