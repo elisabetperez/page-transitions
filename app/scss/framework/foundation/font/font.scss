@@ -73,17 +73,6 @@
   font-display: swap;
 }
 
-//SohneBreit Regular
-@font-face { 
-  font-family: 'SohneBreit';
-  src: url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett.eot');
-  //  url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett?#iefix') format('embedded-opentype'),
-   src:  url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett.woff') format('woff'),
-      url('/../../fonts/SohneBreit/SohneBreit-Dreiviertelfett.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-}
-
 sup {
   font-size: 10px;
 }

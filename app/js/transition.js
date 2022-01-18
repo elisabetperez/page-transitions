@@ -1,11 +1,8 @@
 import Highway from '@dogstudio/highway';
-import { gsap } from 'gsap';
 
-class Fade extends Highway.Transition{
+class DefaultTransition extends Highway.Transition{
     in({from, to, done}){
-        gsap.fromTo(to, {left: '-100%', top: '50%'}, {left: '0%', onComplete: () => { 
-            from.remove();
-        }})
+        from.remove();
     }
 
     out({from, done}){
@@ -13,4 +10,4 @@ class Fade extends Highway.Transition{
     }
 }
 
-export default Fade; 
+export default DefaultTransition; 

@@ -1,7 +1,7 @@
 import './../scss/entries/overview.scss';
 
 import Highway from '@dogstudio/highway';
-import Fade from './transition.js';
+import DefaultTransition from './transition.js';
 
 import Navbar from './modules/navbar/navbar';
 import Blazy from 'blazy'; //inits the lazy loading for images
@@ -16,11 +16,11 @@ class Overview {
         new Navbar();
         const H = new Highway.Core({
             transitions: {
-                default: Fade,
+                default: DefaultTransition,
               }
         });
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {
-            this.manageStyles(to);
+            manageStyles(to);
         });
     }
 

@@ -12,8 +12,6 @@ let config = {
     entry: {
         "home": './app/js/home.js',
         "overview": './app/js/overview.js',
-        "chapter-1": './app/js/chapter-1.js',
-        "chapter-2": './app/js/chapter-2.js',
         "common": './app/js/common.js'
     },
     output: {
