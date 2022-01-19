@@ -18,6 +18,10 @@ let config = {
         path: path.resolve(__dirname, ''),
         filename: '[name].bundle.js'
     }, 
+    performance: {
+        hints: false,
+        maxAssetSize: 1000000
+    },
     plugins:[
         // new HtmlWebpackPlugin({
         //     template: './app/index.html',

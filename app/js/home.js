@@ -10,7 +10,7 @@ import 'lottie-web';
 
 class Home { 
     constructor(){
-        
+        alert('home')
         new Blazy({ 
           selector: ".b--lazy-a"
         }); 
@@ -34,7 +34,7 @@ class Home {
 
     manageStyles(to) {
       // Your main css file, used to prepend other styles
-      const main = document.querySelector('#homeStyle');
+      const main = document.querySelector('#homeCommon');
       const a = [...to.page.querySelectorAll('style:not([data-no-reload]), link:not([data-no-reload])')];
       const b = [...document.querySelectorAll('style:not([data-no-reload]), link:not([data-no-reload])')];
       // Compare Styles
