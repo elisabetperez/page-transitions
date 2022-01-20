@@ -9,6 +9,7 @@
         border-right:1px solid map-get($color-options, f); // change to color options
         width:18%;
         transition: all .3s;
+        box-shadow: 0 0 25px 15px #00000014;
         @media all and ($viewport-type: $laptop){
             width:22%; 
             
