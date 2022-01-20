@@ -1,31 +1,4 @@
 {   
-    "meta": {
-        "lang": "fr",
-        "title": "Rapport sur la sécurité humaine 2022 | PNUD RDH",
-        "description": "Le Rapport sur le Développement Humain 2020 du PNUD explore comment l'activité humaine, les changements environnementaux et les inégalités changent notre façon de travailler, de vivre et de coopérer.",
-        "og_tags": {
-            "title": { "name": "og:title", "content": "Rapport sur le Développement Humain 2020 | PNUD RDH" },
-            "site_name": { "name": "og:site_name", "content": "Rapport sur le Développement Humain 2020 | PNUD RDH" },
-            "type": { "name": "og:type", "content": "website" },
-            "url": { "name": "og:url", "content": "http://report.hdr.undp.org/fr/" },
-            "image": { "name": "og:image", "content": "http://report.hdr.undp.org/img/OG-French.jpg" },
-            "description": { "name": "og:description", "content": "Le Rapport sur le Développement Humain 2020 du PNUD explore comment l'activité humaine, les changements environnementaux et les inégalités changent notre façon de travailler, de vivre et de coopérer." }
-        },
-        "twitter_tags":{
-            "card": { "name": "twitter:card", "content": "summary_large_image" },
-            "site": { "name": "twitter:site", "content": "@undp" },
-            "title": { "name": "twitter:title", "content": "Rapport sur le Développement Humain 2020 | PNUD RDH" },
-            "description": { "name": "twitter:description", "content": "Le Rapport sur le Développement Humain 2020 du PNUD explore comment l'activité humaine, les changements environnementaux et les inégalités changent notre façon de travailler, de vivre et de coopérer." },
-            "image_src": { "name": "twitter:image:src", "content": "http://report.hdr.undp.org/img/OG-French.jpg" }
-        },
-        "canonicals": {
-            "home": "http://report.hdr.undp.org/fr/",
-            "overview": "http://report.hdr.undp.org/fr/intro.html",
-            "chapter_1": "http://report.hdr.undp.org/fr/part-1.html",
-            "chapter_2": "http://report.hdr.undp.org/fr/part-2.html",
-            "chapter_3": "http://report.hdr.undp.org/fr/part-3.html"
-        }
-    },
     "css":{
         "home":"css/home.css",
         "about":"css/about.css",
@@ -47,19 +20,13 @@
         "fr":"../fr",
         "es":"../es"
     },    
-    "logo": {
-        "logo_path": "img/logo_pnud.svg",
-        "logo_link": "https://www.undp.org/content/undp/fr/home.html"
-    },  
     "index":{
-        "credit": "Rapport sur la sécurité humaine 2022",
-        "title": "Nouvelles menaces pour la sécurité humaine à l’ère de l’Anthropocène :",
-        "subtitle":"une plus grande solidarité s’impose",
+        "credit": "Titre",
         "legend": "Home",
         "menu_item": "Home"
     },
     "overview":{
-        "title": "Rapport sur la sécurité humaine 2022",
+        "title": "Titre",
         "legend": "Introduction",
         "menu_item": "Introduction",
         "links": {
@@ -69,144 +36,10 @@
         },
         "body": {
             "content_1": {
-                "p_1": "La pandémie de COVID-19 touche tout le monde, menaçant tous les aspects de notre bien-être et insufflant un sentiment aigu de peur à travers le globe. Si l’on peut aisément comprendre comment la COVID-19 a amené les individus à se sentir davantage en insécurité, les craintes allaient déjà grandissant avant la pandémie. Alors que le monde connaissait des niveaux d’indice de développement humain (IDH) sans précédent, on estime que 6 personnes sur 7 se sentaient en insécurité dans les années précédant la pandémie. Non seulement ce sentiment d’insécurité était élevé, mais il ne cessait d’augmenter dans la plupart des pays pour lesquels des données sur cette question étaient disponibles, y compris dans certains des pays affichant les valeurs les plus élevées de l’IDH.",
                 "figure_1": {
                     "text": "Le sentiment d’insécurité humaine est largement répandu à travers le monde",
-                    "link": "./../img/lotties/figure_1_fr.json"
+                    "link": "./../img/lotties/9744-sample-animation.json"
                 }
-            },
-            "content_2":{
-                "p_1": "Pour la première fois, les indicateurs du développement humain ont baissé, et ce de façon radicale. En 2021, malgré la disponibilité (très inégalement répartie) de vaccins contre la COVID-19, la reprise économique amorcée dans de nombreux pays et un retour partiel à l’école, la crise s’est aggravée sur le plan sanitaire et a entraîné une baisse de l’espérance de vie à la naissance. Par ailleurs, d’après de nouvelles simulations (figure 2), l’IDH corrigé de la COVID-19 a perdu l’équivalent d’environ cinq années de progrès.",
-                "figure_2":{
-                    "text": "La pandémie de COVID-19 a provoqué une baisse sans précédent des valeurs de l’indice de développement humain",
-                    "link": "https://datawrapper.dwcdn.net/Oz88o/1/"
-                }
-            },
-            "content_3":{
-                "p_1": "Il n’est pas difficile de comprendre comment la COVID-19 a renforcé le sentiment d’insécurité chez les individus, mais comment expliquer l’étonnante fracture survenue entre l’amélioration du bien-être et le recul du sentiment de sécurité ? C’est précisément la question qui sous-tend le présent rapport. En y répondant, nous espérons éviter un retour à des trajectoires de développement humain empreint d’insécurité humaine."
-            }
-        }
-    },
-    "chapter_1":{
-        "title": "Renewing human development for the Anthropocene",
-        "legend": "1<sup>re</sup> partie",
-        "menu_item": "1<sup>re</sup> partie",
-        "links": {
-            "en": "../part-1.html",
-            "fr": "../fr/part-1.html",
-            "es": "../es/part-1.html"
-        },
-        "body": {
-            "content_1": {
-                "p_1": "Derrière cette déconnexion entre développement et sécurité se profile l’ombre de l’Anthropocène. Les approches de développement fortement axées sur la croissance économique au détriment du développement humain équitable ont généré des inégalités flagrantes de plus en plus marquées et enclenché une mutation déstabilisatrice et dangereuse de la planète. Dans notre quête de développement, nous avons occulté le fait que nous faisions partie de la nature, d’où l’apparition de nouvelles menaces qui sont un sous-produit du développement : nouvelles menaces sanitaires, aggravation de l’insécurité alimentaire et fréquence accrue des catastrophes. Au-delà des effets de la pollution ou des zoonoses, le changement climatique devrait avoir à lui seul de lourdes répercussions sur la mortalité. En 2100, le nombre estimatif de décès liés au changement climatique (dans un scénario avec des émissions de gaz à effet de serre très élevées) pourrait être comparable à certaines des principales causes de mortalité actuelles (figure 3).",
-                "figure_3":{
-                    "text": "Dans un scénario d’émissions très élevées, certaines régions du monde pourraient connaître un taux de mortalité dû au changement climatique proche de celui des principales causes de mortalité actuelles",
-                    "link": "./../img/lotties/figure_3_fr.json"
-                }      
-            },
-            "content_2": {
-                "p_1": "Le rapport revisite la conception de la sécurité humaine pour en tirer des enseignements pour l’Anthropocène."
-            },
-            "content_3": {
-                "p_1": "Lorsqu’elle a été introduite en 1994, l’approche de la sécurité humaine a réorienté le débat sur la sécurité, en déplaçant le curseur de la sécurité territoriale vers la sécurité des personnes. Cette idée, approuvée par l’Assemblée générale des Nations Unies en 2012, a amené les experts de la sécurité et les gouvernants à regarder au-delà de la protection de l’État-nation pour protéger ce qui nous tient le plus à cœur, à savoir la satisfaction de nos besoins essentiels, notre intégrité physique et notre dignité humaine. Elle a souligné l’importance du droit d’autrui à vivre à l’abri de la peur, préservé du besoin et dans la dignité. Elle a mis en évidence le lien étroit entre la sécurité, le développement et la protection et l’autonomisation des personnes et des communautés.",
-                "p_2": "Dans sa deuxième partie, le rapport examine comment la sécurité humaine est affectée par une nouvelle génération de menaces interdépendantes qui prennent forme dans le contexte de l’Anthropocène : les inconvénients des technologies numériques, les conflits violents, les inégalités horizontales et les défis évolutifs auxquels sont confrontés les systèmes de santé (figure 4).",
-                "p_3": "C’est l’imbrication de ces menaces qui appelle une nouvelle approche permettant de dépasser le traitement compartimenté des problèmes lors de la conception ou de l’évaluation des politiques publiques.",
-                "figure_4":{
-                    "text": "La nouvelle génération de menaces pour la sécurité humaine",
-                    "link": "./../img/lotties/figure_4_fr.json"
-                }
-            },
-            "content_4": {
-                "p_1": "Le rapport plaide pour un élargissement de l’idée de la sécurité humaine en ajoutant la solidarité aux stratégies de sécurité humaine fondées sur la protection et l’autonomisation proposées par le rapport Ogata-Sen (2003). "
-            },
-            "content_5": {
-                "p_1": "L’intégration de la solidarité signifie que la sécurité humaine à l’ère de l’Anthropocène doit aller au-delà de la protection des personnes et de leurs communautés pour intégrer systématiquement l’interdépendance entre les individus et entre les individus et la planète. En effet, le moteur de la sécurité humaine dans l’Anthropocène est la combinaison de la protection, l’autonomisation et la solidarité.",
-                "p_2": "Par ailleurs, le rapport pose le constat alarmant que le sentiment d’insécurité humaine est associé à une faible confiance impersonnelle, qui n’a rien à voir avec la situation financière des individus.",
-                "p_3": "Comment intégrer cette dimension de confiance – entre les personnes, entre les personnes et les institutions, entre les pays – dans notre approche de l’insécurité humaine ?",
-                "p_4": "Le présent rapport considère que la capacité d’agir est au cœur du cadre élargi de la sécurité humaine (figure 5). La capacité d’agir nous rappelle que l’amélioration du bien-être ne doit pas être le seul élément à prendre en compte pour évaluer les politiques et les progrès réalisés. Elle nous permet également d’éviter le piège des solutions partielles, telles que la mise en place d’une protection sans prêter attention au risque de déresponsabilisation ou l’engagement en faveur de la solidarité en laissant certaines personnes sans protection.",
-                "figure_5":{
-                    "text": "Enrichir la sécurité humaine pour l’Anthropocène",
-                    "link": "./../img/lotties/figure_5_fr.json"
-                }
-            }
-        }
-    },
-    "chapter_2":{
-        "title": "Acting for change",
-        "legend": "2<sup>e</sup> partie",
-        "menu_item": "2<sup>e</sup> partie",
-        "links": {
-            "en": "../part-2.html",
-            "fr": "../fr/part-2.html",
-            "es": "../es/part-2.html"
-        },
-        "body": {
-            "content_1": {
-                "t_1": "Chapitre 3 Les nouvelles menaces des technologies pour la sécurité humaine",
-                "p_1": "Si les technologies numériques peuvent élargir les libertés humaines, elles peuvent aussi avoir des conséquences involontaires préjudiciables à la sécurité humaine. Le chapitre 3 s’intéresse à certaines des menaces que les technologies numériques font peser sur la sécurité humaine. Il examine tout d’abord comment les cyberattaques courantes et les nouveaux outils technologiques peuvent nuire à la sécurité humaine. Il analyse ensuite le risque de compromission des droits humains induit par la lutte contre la cybercriminalité et la manière dont le recours croissant aux algorithmes de l’intelligence artificielle (IA) peut affaiblir la sécurité humaine. Enfin, il étudie les effets des inégalités d’accès aux technologies sur la sécurité humaine, dont l’accès inégal à la vaccination contre la COVID-19 est une parfaite illustration.",
-                "t_2": "Chapitre 4 Révéler la dimension humaine des conflits violents",
-                "p_2": "Le monde connaît aujourd’hui des niveaux élevés de conflits : environ 1,2 milliard de personnes résident dans des zones touchées par des conflits, dont 560 millions vivent dans des pays qui ne sont pas considérés comme des contextes fragiles (figure 6). De plus en plus de personnes, dans de plus en plus d’endroits, sont confrontées à une forme ou une autre de conflit, et la violence est une préoccupation pour la majorité de la population mondiale. Le chapitre 4 vise à centrer l’analyse des conflits sur les populations plutôt que sur les contestations. En partant de définitions bien établies du conflit, ce chapitre élargit la réflexion pour examiner conjointement les menaces qui pèsent sur la sécurité humaine et les personnes qui vivent dans des zones touchées par des conflits. Il montre ainsi comment une nouvelle forme de sécurité humaine fondée sur la protection, l’autonomisation et la solidarité peut éviter les angles morts et soutenir la construction de sociétés justes et pacifiques.",
-                "figure_6":{
-                    "text": "Figure 6 Populations vivant à moins de 50 kilomètres d’un conflit",
-                    "link": "https://datawrapper.dwcdn.net/WY3U7/2/"
-                },
-                "t_3": "Chapitre 5 Les inégalités et l’atteinte à la dignité humaine",
-                "p_3": "La persistance des inégalités de développement humain et de la discrimination a une incidence directe sur la dignité. Les inégalités en matière de dignité humaine ne relèvent pas seulement de la morale ; elles sont délétères à l’échelle de la planète et ont des répercussions concrètes directes sur le développement humain. Le chapitre 5 explore les différentes expériences d’inégalités horizontales associées au chevauchement des identités. Il souligne l’importance d’appréhender les humains comme des acteurs – et non comme des victimes – lorsqu’on analyse la façon dont les différents groupes sociaux abordent les défis de la sécurité humaine et les causes structurelles qui peuvent générer de la discrimination et de la violence à l’égard de ces groupes. Par ailleurs, l’accent mis sur la capacité d’agir montre que l’élimination des inégalités horizontales n’est pas seulement une question de justice pour les personnes frappées de discrimination ou d’exclusion, mais également un facteur d’enrichissement pour les communautés et la société en général, car la capacité d’agir est un élément clé des processus plus larges de changement social. En outre, une approche axée sur la capacité d’agir est une reconnaissance du fait que les personnes ont plusieurs identités à la fois. L’appartenance simultanée des individus à différents collectifs permet d’établir une solidarité entre les groupes à partir de valeurs et d’objectifs communs. Une capacité d’agir solide renforce l’espace de solidarité, car les individus sont mieux à même de raisonner, d’élaborer des stratégies et de participer à des initiatives qui transforment la société.",
-                "figure_7":{
-                    "text": "Les inégalités de genre sont parmi les inégalités horizontales les plus répandues",
-                    "link": ""
-                },
-                "t_4": "Chapitre 6 Des systèmes de santé dépassés par les nouveaux défis de la sécurité humaine",
-                "p_4": "Si les dernières décennies ont été marquées par des améliorations majeures de la santé mondiale selon les indicateurs standard, une nouvelle génération de défis a vu le jour sous la forme de pandémies, de la prédominance des maladies non transmissibles et de l’inadéquation entre les défis sanitaires et les systèmes de santé. Le chapitre 6 explore ce décalage entre les menaces sanitaires et la capacité des systèmes de santé à y faire face. Pour évaluer la mesure dans laquelle les systèmes de santé peuvent être qualifiés d’universels, le rapport fait appel à un nouvel indice d’universalité des systèmes de santé. Cet indice repose sur une conception globale de l’universalité constituée de la couverture effective à laquelle s’ajoutent deux autres composantes : la générosité et l’équité. L’indice d’universalité des systèmes de santé a progressé au fil du temps : entre 1995 et 2017, il a gagné presque 8 points au niveau mondial. Toutefois, les écarts d’universalité entre les différents groupes de l’IDH se creusent en moyenne (figure 8).",
-                "p_5": "Le chapitre aborde ensuite les inégalités de redressement après l’épidémie de COVID-19, l’évolution de la charge qui pèse sur les systèmes de santé, la mesure dans laquelle la faiblesse des systèmes de santé aggrave l’insécurité humaine et la possibilité de créer une nouvelle forme de sécurité humaine grâce à l’universalité. La réévaluation et la réforme des systèmes de santé sous le prisme de la sécurité humaine révèlent que les systèmes de santé font partie des outils les plus prometteurs pour promouvoir une nouvelle génération de stratégies en faveur de la sécurité humaine."
-            },
-            "content_2": {
-                "t_1": "Conclusion",
-                "p_1": "L’attention permanente et universelle portée à une conception enrichie de la sécurité humaine peut mettre fin aux trajectoires d’un développement marqué par l’insécurité humaine qui ont donné naissance à la pandémie de COVID-19, au changement climatique et, plus généralement, aux défis soulevés par l’Anthropocène.",
-                "p_2": "Dans le contexte de l’Anthropocène, nous devons impérativement aller au-delà des interventions fragmentées pour faire face au changement climatique, à la perte de biodiversité, aux conflits, aux migrations, à la question des réfugiés, aux pandémies et à la protection des données. Nous devons porter une attention systématique, permanente et universelle à la solidarité – non pas comme un acte de charité facultatif, mais comme un appel à poursuivre la quête de la sécurité humaine dans l’intérêt de l’humanité.",
-                "figure_8":{
-                    "text": "Évolution des inégalités : le fossé se creuse au fil du temps entre les systèmes de santé",
-                    "link": "https://datawrapper.dwcdn.net/VTkeA/1/"
-                }
-            }
-        }
-    },
-    "download":{
-        "label": "Télécharger le rapport",
-        "link": "path",
-        "cta_title": "Télécharger",
-        "cta_label": "Télécharger le rapport"
-    },
-    "share_links":{
-        "facebook": "https://www.facebook.com/sharer/sharer.php?u=http://report.hdr.undp.org/fr/",
-        "linkedin": "http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Freport.hdr.undp.org%2Ffr%2F&title=Le%20Rapport%20sur%20le%20D%C3%A9veloppement%20Humain%202020%20du%20PNUD%20explore%20comment%20l'activit%C3%A9%20humaine%2C%20les%20changements%20environnementaux%20et%20les%20in%C3%A9galit%C3%A9s%20changent%20notre%20fa%C3%A7on%20de%20travailler%2C%20de%20vivre%20et%20de%20coop%C3%A9rer.",
-        "twitter": "https://twitter.com/intent/tweet?url=http%3A%2F%2Freport.hdr.undp.org%2Ffr%2F&text=Le%20Rapport%20sur%20le%20D%C3%A9veloppement%20Humain%202020%20du%20PNUD%20explore%20comment%20l'activit%C3%A9%20humaine%2C%20les%20changements%20environnementaux%20et%20les%20in%C3%A9galit%C3%A9s%20changent%20notre%20fa%C3%A7on%20de%20travailler%2C%20de%20vivre%20et%20de%20coop%C3%A9rer.",
-        "mail": "mailto:n?subject=Rapport sur le Développement Humain 2020 | PNUD RDH&body=Le Rapport sur le Développement Humain 2020 du PNUD explore comment l'activité humaine, les changements environnementaux et les inégalités changent notre façon de travailler, de vivre et de coopérer. http://report.hdr.undp.org/fr/"
-    },
-    "explore_cta": "Explorer",
-    "alts":{
-        "logo": "PNUD logo",
-        "cover": {
-            "intro": "Couverture de l'introduction",
-            "part_1": "Couverture Partie 1",
-            "part_2": "Couverture Partie 2",
-            "part_3": "Couverture Partie 3"
-        },
-        "diagrams":{
-            "intro_1": "Structure du Rapport sur le Développement Humain 2020",
-            "part_1": {
-                "d1" : "Figure 1.1 : Les déséquilibres planétaires et sociaux se renforcent mutuellement",
-                "d2" : "Figure 3.1 : Principaux résultats pour guider l'action dans l'Anthropocène"
-            },
-            "part_2":{
-                "i1": "Normes sociales",
-                "i2": "Incitations au changement",
-                "i3": "Solutions basées sur la nature",
-                "d1": "Figure 6.1 Solutions basées sur la nature et le lien vertueux entre l'homme et la planète"
-            },
-            "part_3": {
-                "d1" : "Valeur d’Indice de Développement Humain (IDH) ajustée aux pressions exercées sur la planète",
-                "d2" : "IDH ajusté à la planète basé sur les émissions de carbone (production) et l'empreinte matérielle"
             }
         }
     }

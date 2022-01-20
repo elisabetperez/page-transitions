@@ -21,14 +21,16 @@ class Home {
         });
 
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {
-          this.manageStyles(to);
-          this.manageScripts(to);
-          if (location.anchor) {
-            const el = document.querySelector(location.anchor);
-            if (el) {
-                window.scrollTo(el.offsetLeft, el.offsetTop);
-            }
-          }
+          setTimeout(() => {
+            this.manageStyles(to);
+            this.manageScripts(to);
+            // if (location.anchor) {
+            //   const el = document.querySelector(location.anchor);
+            //   if (el) {
+            //       window.scrollTo(el.offsetLeft, el.offsetTop);
+            //   }
+            // }
+          }, 1000);
         });
 
     }

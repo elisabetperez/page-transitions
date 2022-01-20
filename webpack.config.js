@@ -54,43 +54,13 @@ let config = {
         ]
     }
 }
-
-//if dev
-// if (currentTask == 'dev') {
-//     // cssConfig.use.unshift('style-loader')
-//     config.output = {
-//       filename: '[name].bundled.js',
-//       path: path.resolve(__dirname, 'app')
-//     }
-//     config.devServer = {
-//       before: function(app, server) {
-//         server._watch('./app/**/*.html')
-//         server._watch('./app/**/*.json')
-//       },
-//       contentBase: path.join(__dirname, 'app'),
-//       hot: true,
-//       port: 3000,
-//       host: '0.0.0.0'
-//     }
-//     config.mode = 'development'
-//     config.module.rules.push(
-//     {
-//         test: /\.s[ac]ss$/i,
-//         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
-//     })
-// }
-
-//if build
 if (currentTask == 'build') {
     config.mode = 'production',
     config.output = {
         filename: 'js/[name].js',
         chunkFilename: 'js/[name].js',
         path: path.resolve(__dirname, 'docs'),
-        // publicPath: "http://report2020:8888/",
-        publicPath: "http://localhost/undp-hsr-2021/docs/"
-        // publicPath: "https://landtco.github.io/undp--hdr-2020/"
-        // publicPath: "http://207.154.194.199/works/undp/hdr2020/"
+        publicPath: "http://report2020:8888/",
         
     },
     config.module.rules.push(
