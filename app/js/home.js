@@ -8,7 +8,7 @@ import 'lottie-web';
 
 class Home { 
     constructor(){
-        console.log('home JS!');
+        console.log('home JS');
         new Blazy({ 
           selector: ".b--lazy-a"
         }); 
