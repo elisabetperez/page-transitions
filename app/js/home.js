@@ -16,4 +16,4 @@ class Home {
     }
 }
 export default Home;
-var home = new Home();
+new Home();

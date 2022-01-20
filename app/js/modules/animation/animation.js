@@ -1,14 +1,14 @@
 import Highway from '@dogstudio/highway';
 import DefaultTransition from './transition.js';
-import HomeRenderer from './homerender.js';
-import AboutRenderer from './aboutrender.js';
+import IndexRenderer from './indexRenderer.js';
+import IntroRenderer from './introRenderer.js';
 
 class Animation { 
     constructor(){
         const H = new Highway.Core({
             renderers: {
-                index: HomeRenderer,
-                intro: AboutRenderer
+                index: IndexRenderer,
+                intro: IntroRenderer
             },
             transitions: {
                 default: DefaultTransition,

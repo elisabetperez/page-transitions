@@ -1,10 +1,14 @@
 import Highway from "@dogstudio/highway";
 
-class HomeRenderer extends Highway.Renderer {
+/*
+    View Events for Highway
+	- About Page
+    - Events are listed in their execution order
+-------------------------------------------------- */
+class IntroRenderer extends Highway.Renderer {
 
 	onEnter() {
 		console.log("onEnter");
-		alert('entro')
 	}
 
 	onEnterCompleted() {
@@ -20,4 +24,4 @@ class HomeRenderer extends Highway.Renderer {
 	}
 }
 
-export default HomeRenderer;
+export default IntroRenderer;
