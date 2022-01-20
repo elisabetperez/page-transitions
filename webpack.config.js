@@ -22,6 +22,18 @@ let config = {
         hints: false,
         maxAssetSize: 1000000
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                js: {
+                    test: /\.js$/,
+                    name: "tf_common_entries",
+                    chunks: "all",
+                    minChunks: 2,
+                }
+            }
+        }
+    },
     plugins:[
         // new HtmlWebpackPlugin({
         //     template: './app/index.html',
