@@ -58,7 +58,7 @@ if (currentTask == 'build') {
         filename: 'js/[name].js',
         chunkFilename: 'js/[name].js',
         path: path.resolve(__dirname, 'docs'),
-        publicPath: "http://report2020:8888/",
+        publicPath: "http://localhost/transitions/docs/",
         
     },
     config.module.rules.push(
