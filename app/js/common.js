@@ -17,7 +17,7 @@ class Common {
         });
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {
           this.manageStyles(to);
-          // this.manageScripts(to);
+        //   this.manageScripts(to);
         });
     }
 
