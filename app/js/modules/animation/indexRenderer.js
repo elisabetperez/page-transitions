@@ -3,19 +3,19 @@ import Highway from "@dogstudio/highway";
 class IndexRenderer extends Highway.Renderer {
 
 	onEnter() {
-		console.log("onEnter");
+		console.log("onEnter Home");
 	}
 
 	onEnterCompleted() {
-		console.log("onEnterCompleted");
+		console.log("onEnterCompleted Home");
 	}
 
 	onLeave() {
-		console.log("onLeave");
+		console.log("onLeave Home");
 	}
 
 	onLeaveCompleted() {
-		console.log("onLeaveCompleted");
+		console.log("onLeaveCompleted Home");
 	}
 }
 

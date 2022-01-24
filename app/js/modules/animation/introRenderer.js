@@ -1,26 +1,21 @@
 import Highway from "@dogstudio/highway";
 
-/*
-    View Events for Highway
-	- About Page
-    - Events are listed in their execution order
--------------------------------------------------- */
 class IntroRenderer extends Highway.Renderer {
 
 	onEnter() {
-		console.log("onEnter");
+		console.log("onEnter Intro");
 	}
 
 	onEnterCompleted() {
-		console.log("onEnterCompleted");
+		console.log("onEnterCompleted Intro");
 	}
 
 	onLeave() {
-		console.log("onLeave");
+		console.log("onLeave Intro");
 	}
 
 	onLeaveCompleted() {
-		console.log("onLeaveCompleted");
+		console.log("onLeaveCompleted Intro");
 	}
 }
 

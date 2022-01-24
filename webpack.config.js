@@ -10,8 +10,6 @@ const { Server } = require('http');
 
 let config = {
     entry: {
-        "home": './app/js/home.js',
-        "overview": './app/js/overview.js',
         "common": './app/js/common.js'
     },
     output: {

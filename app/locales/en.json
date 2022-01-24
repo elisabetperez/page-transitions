@@ -16,7 +16,8 @@
         "overview":"js/overview.js",
         "chapter_1":"js/chapter-1.js",
         "chapter_2":"js/chapter-2.js",
-        "chapter_3":"js/chapter-3.js"
+        "chapter_3":"js/chapter-3.js",
+        "common":"js/common.js"
     },
     "lang":{
         "en":"./",
