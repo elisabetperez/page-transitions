@@ -1,4 +1,6 @@
 import Highway from "@dogstudio/highway";
+import 'lottie-web';
+import { tns } from "./../../../../node_modules/tiny-slider/src/tiny-slider";
 
 class IntroRenderer extends Highway.Renderer {
 
@@ -9,10 +11,17 @@ class IntroRenderer extends Highway.Renderer {
 	onEnterCompleted() {
 		console.log("onEnterCompleted Intro");
 		this.observeDiv();
+		this.slider = tns({
+			container: '.js--slider-intro',
+			items: 1,
+			slideBy: 'page',
+			autoplay: true
+		  });
 	}
 
 	onLeave() {
 		console.log("onLeave Intro");
+		this.slider.destroy();
 	}
 
 	onLeaveCompleted() {
