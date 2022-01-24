@@ -34,7 +34,7 @@ class IntroRenderer extends Highway.Renderer {
                     }
                 });
                 firstTimeDiv = false;
-              }
+              } 
             }
           
             var firstTimeDiv = true;
