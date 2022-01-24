@@ -34,10 +34,15 @@
 
 // Version: 2.9.4
 
+.lottie{
+    border: 1px solid green;
+}
 .tns-outer {
     padding: 0 !important; // remove padding: clientWidth = width + padding (0) = width
     [hidden] { display: none !important; }
     [aria-controls], [data-action] { cursor: pointer; }
+    border: 1px solid yellow;
+    padding: 70px!important;
   }
   .tns-slider {
     -webkit-transition: all 0s;
