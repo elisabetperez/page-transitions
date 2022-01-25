@@ -35,3 +35,4 @@ class IndexRenderer extends Highway.Renderer {
 }
 
 export default IndexRenderer;
+//new IndexRenderer();
