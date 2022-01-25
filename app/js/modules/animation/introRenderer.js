@@ -1,27 +1,33 @@
 import Highway from "@dogstudio/highway";
 import 'lottie-web';
-import { tns } from "./../../../../node_modules/tiny-slider/src/tiny-slider";
+import Swiper from "./../../../../node_modules/swiper/swiper-bundle.js";
 
 class IntroRenderer extends Highway.Renderer {
 
 	onEnter() {
 		console.log("onEnter Intro");
+		console.log(this.wrap);
+		
 	}
 
 	onEnterCompleted() {
 		console.log("onEnterCompleted Intro");
 		this.observeDiv();
-		this.slider = tns({
-			container: '.js--slider-intro',
-			items: 1,
-			slideBy: 'page',
-			autoplay: true
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+		  
+			// If we need pagination
+			pagination: {
+			  el: '.swiper-pagination',
+			},
+		  
 		  });
 	}
 
 	onLeave() {
 		console.log("onLeave Intro");
-		this.slider.destroy();
 	}
 
 	onLeaveCompleted() {
@@ -61,3 +67,4 @@ class IntroRenderer extends Highway.Renderer {
 }
 
 export default IntroRenderer;
+// new IntroRenderer();

@@ -23,6 +23,7 @@
     "lottie-web": "^5.8.1",
     "nodelist-foreach-polyfill": "^1.2.0",
     "promise-polyfill": "8.2.0",
+    "swiper": "^7.4.1",
     "tiny-slider": "^2.9.4"
   },
   "devDependencies": {

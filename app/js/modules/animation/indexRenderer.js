@@ -1,5 +1,6 @@
 import Highway from "@dogstudio/highway";
-import { tns } from "./../../../../node_modules/tiny-slider/src/tiny-slider";
+import Swiper from "./../../../../node_modules/swiper/swiper-bundle.js";
+
 
 import 'lottie-web';
 
@@ -11,17 +12,21 @@ class IndexRenderer extends Highway.Renderer {
 
 	onEnterCompleted() {
 		console.log("onEnterCompleted Home");
-		this.slider = tns({
-			container: '.js--slider-home',
-			items: 1,
-			slideBy: 'page',
-			autoplay: true
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+		  
+			// If we need pagination
+			pagination: {
+			  el: '.swiper-pagination',
+			},
+		  
 		  });
 	}
 
 	onLeave() {
 		console.log("onLeave Home");
-		this.slider.destroy();
 	}
 
 	onLeaveCompleted() {

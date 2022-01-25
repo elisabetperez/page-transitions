@@ -12,18 +12,21 @@ class Common {
                 intro: IntroRenderer
             },
             transitions: {
-                default: DefaultTransition,
+                index: DefaultTransition,
+                intro: DefaultTransition
             }
         });
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {
-          this.manageStyles(to);
-        //   this.manageScripts(to);
+          setTimeout(() => {
+            this.manageStyles(to);
+          // this.manageScripts(to);
+          }, 1000);
         });
     }
 
     manageStyles(to) {
         // Your main css file, used to prepend other styles
-        const main = document.querySelector('#introCommon');
+        const main = document.querySelector('#commonSt');
         const a = [...to.page.querySelectorAll('style:not([data-no-reload]), link:not([data-no-reload])')];
         const b = [...document.querySelectorAll('style:not([data-no-reload]), link:not([data-no-reload])')];
         // Compare Styles
