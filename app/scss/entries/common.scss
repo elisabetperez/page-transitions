@@ -32,6 +32,34 @@
 @import './../framework/components/media/b--media-a.scss';
 
 
+@import './../framework/components/header/b--burger-a.scss';
+@import './../framework/components/layout/b--layout-a.scss';
+
+@import './../framework/components/header/b--nav-a.scss';
+@import './../framework/components/card/b--card-b.scss';
+
+@import './../framework/components/media/b--media-a.scss';
+@import './../framework/components/cta/b--cta-a.scss';
+
+
+@import './../framework/components/layout/b--layout-a.scss';
+@import './../framework/components/icon/b--icon-b.scss';
+@import './../framework/components/slider/tiny-slider-default.scss';
+@import './../framework/components/slider/b--slider-a.scss';
+@import './../framework/components/controls/b--controls-a.scss';
+@import './../framework/components/card/b--card-a.scss';
+@import './../framework/components/animation-home/b--animation-home.scss';
+@import './../framework/components/language/b--language-a.scss';
+
+@import './../framework/components/scroll/b--scroll-a.scss';
+
+@import './../framework/components/hero/b--hero-a.scss';
+@import './../framework/components/waves/b--waves-a.scss';
+@import './../framework/components/section/b--section-b.scss';
+
+body.index{
+    background-color: #02295b!important;
+}
 // Version: 2.9.4
 
 .lottie{
