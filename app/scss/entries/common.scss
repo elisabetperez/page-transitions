@@ -57,10 +57,17 @@
 @import './../framework/components/waves/b--waves-a.scss';
 @import './../framework/components/section/b--section-b.scss';
 
-body.index{
-    background-color: #02295b!important;
-}
 // Version: 2.9.4
+.loader{
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+}
 
 .lottie{
     border: 1px solid green;

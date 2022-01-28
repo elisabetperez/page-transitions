@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color:map-get($color-options, a);
+    background-color: white;
     @include make-font-d();
     font-weight: 300;
     font-size: $font-body-size;

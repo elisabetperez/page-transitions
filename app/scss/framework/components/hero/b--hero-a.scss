@@ -2,6 +2,7 @@
     position: relative;
     padding: $measure*3 0;
     height: 100vh;
+    color: black;
     @media all and ($viewport-type: $tabletl) {
         height: 100%;
     }

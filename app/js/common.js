@@ -1,6 +1,8 @@
 import './../scss/entries/common.scss';
 import Highway from '@dogstudio/highway';
-import DefaultTransition from './modules/animation/transition.js';
+import HomeTransition from './modules/animation/homeTransition.js';
+import IntroTransition from './modules/animation/introTransition.js';
+import PartOneTransition from './modules/animation/partOneTransition.js';
 import IndexRenderer from './modules/animation/indexRenderer.js';
 import IntroRenderer from './modules/animation/introRenderer.js';
 
@@ -12,8 +14,9 @@ class Common {
                 intro: IntroRenderer
             },
             transitions: {
-                index: DefaultTransition,
-                intro: DefaultTransition
+                index: HomeTransition,
+                intro: IntroTransition,
+                part: PartOneTransition,
             }
         });
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {
@@ -21,6 +24,13 @@ class Common {
             this.manageStyles(to);
           // this.manageScripts(to);
           }, 1000);
+
+          if (location.anchor) {
+            const el = document.querySelector(location.anchor);
+            if (el) {
+              window.scrollTo(el.offsetLeft, el.offsetTop);
+            }
+          }
         });
     }
 

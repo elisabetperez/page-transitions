@@ -7,11 +7,11 @@
     &__title{
         display: inline-block;
         @include make-font-e();
-        color:map-get($color-options, f);
+        color: black;
         padding-right: $measure;
     }
     &__artwork{
-        fill: white;
+        fill: black;
         width: $measure*4;
     }
 }
