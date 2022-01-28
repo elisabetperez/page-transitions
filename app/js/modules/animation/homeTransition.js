@@ -8,7 +8,6 @@ class HomeTransition extends Highway.Transition{
         from.remove();
         done();
         window.scrollTo(0, 0);
-      
     }
 
     out({from, done}){
