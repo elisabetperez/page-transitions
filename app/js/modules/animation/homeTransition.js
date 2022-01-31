@@ -4,23 +4,38 @@ import { gsap,timeline } from 'gsap';
 
 class HomeTransition extends Highway.Transition{
     in({from, to, done}){
-        from.remove();
-        done();
-        window.scrollTo(0, 0);
+
+        gsap.set(document.querySelector(".b--hero-a"), {opacity: 0});
+        gsap.set(document.querySelector('.loader'), {opacity: 1});
+
+        gsap.to(document.querySelector(".b--hero-a"), {
+            opacity: 1,
+            duration: 1,
+            ease: "power2.out",
+            onComplete: () => {
+                from.remove();
+                done();
+                window.scrollTo(0, 0);
+                setTimeout(() => {
+                    gsap.to(document.querySelector('.loader'), {duration: 1, opacity: 0});
+                }, 1000);
+            }
+            });
+        
       
     }
 
     out({from, done}){
-            gsap.to(document.querySelector('.loader'), {
-                opacity: 1,
-                duration: 2.5,
-                ease: "power2.out",
-                onComplete: () => {
-                    setTimeout(() => {
-                        done();
-                    }, 2500);
-                }
-              });
+        gsap.to(document.querySelector('.loader'), {
+            opacity: 1,
+            duration: 1,
+            ease: "power2.out",
+            onComplete: () => {
+                setTimeout(() => {
+                    done();
+                }, 1000);
+            }
+            });
     }
 }
 
