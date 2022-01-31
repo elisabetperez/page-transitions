@@ -6,7 +6,7 @@ class HomeTransition extends Highway.Transition{
     in({from, to, done}){
 
         gsap.set(document.querySelector(".b--hero-a"), {opacity: 0});
-        gsap.set(document.querySelector('.loader'), {opacity: 1});
+        gsap.set(document.querySelector('.loader.home'), {opacity: 1});
 
         gsap.to(document.querySelector(".b--hero-a"), {
             opacity: 1,
@@ -17,16 +17,16 @@ class HomeTransition extends Highway.Transition{
                 done();
                 window.scrollTo(0, 0);
                 setTimeout(() => {
-                    gsap.to(document.querySelector('.loader'), {duration: 1, opacity: 0});
+                    gsap.to(document.querySelector('.loader.home'), {duration: 1, opacity: 0});
                 }, 1000);
             }
-            });
+        });
         
-      
     }
 
     out({from, done}){
-        gsap.to(document.querySelector('.loader'), {
+        window.scrollTo(0, 0);
+        gsap.to(document.querySelector('.loader.home'), {
             opacity: 1,
             duration: 1,
             ease: "power2.out",
@@ -35,7 +35,7 @@ class HomeTransition extends Highway.Transition{
                     done();
                 }, 1000);
             }
-            });
+        });
     }
 }
 

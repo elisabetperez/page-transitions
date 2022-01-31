@@ -26,6 +26,7 @@
     <body>    
 		<main data-router-wrapper>
 			<article data-router-view="intro">
+				<div class="loader intro"></div>
 				<div class="b--header-a">
 					<div class="b--burger-a">
 						<span class="b--burger-a__item"></span>
@@ -34,83 +35,39 @@
 					</div>
 				</div>  
 				
-				<div class="b--layout-a">
-					<div class="b--layout-a__hd">
-		
-						<ul class="b--lang-a">
-							<li class="b--lang-a__list-item">
-								<a class="b--lang-a__list-item__link" href="./intro.html">EN</a>
-							</li>
-							<li class="b--lang-a__list-item">
-								<a class="b--lang-a__list-item__link" href="./fr/intro.html">FR</a>
-							</li>
-							<li class="b--lang-a__list-item">
-								<a class="b--lang-a__list-item__link" href="./es/intro.html">ES</a>
-							</li>
-						</ul>
-		
-						<ul class="b--nav-a__list-group">
-							<li class="b--nav-a__list-group__list-item">
-								<a class="b--nav-a__list-group__list-item__link" href="index.html">Home</a>
-								<a class="b--nav-a__list-group__list-item__link" href="intro.html">Intro</a>
-								<a class="b--nav-a__list-group__list-item__link" href="part-1.html">Part I</a>
-							</li>
-						</ul>
-						
-					</div>
-					
-					<div class="b--bi-a">
-						<div class="b--layout-a__content">
-							<section>
-								<div class="f--container">
-									<div class="f--row">
-										<div class="f--col-8 f--offset-2 text-center">
-											<h2 class="f--font-d text-uppercase f--color-a b--bt-b text-center">Introduction</h2>
-										</div>
+				<div class="b--hero-a">
+					<div class="f--container">
+						<div class="f--row">
+							<div class="f--col-8 f--offset-2">
+								<div class="b--hero-a__ft-items">
+									<h1>Introduction</h1>
+									<p>Thirty years ago, UNDP created a new way to conceive and measure progress. Instead of using growth in GDP as the sole measure of development, we ranked the world’s countries by their human development: by whether people in each country have the freedom and opportunity to live the lives they value.</p>
+									<p>The 2020 Human Development Report (HDR) doubles down on the belief that people’s agency and empowerment can bring about the action we need if we are to live in balance with the planet in a fairer world. It shows that we are at an unprecedented moment in history, in which human activity has become a dominant force shaping the planet. These impacts interact with existing inequalities, threatening significant development reversals. Nothing short of a great transformation – in how we live, work and cooperate – is needed to change the path we are on. The Report explores how to jumpstart that transformation.</p>
+									<p>The climate crisis. Biodiversity collapse. Ocean acidification. The list is long and growing longer. So much so that many scientists believe that for the first time, instead of the planet shaping humans, humans are knowingly shaping the planet. This is the Anthropocene – the Age of Humans - a new geologic epoch.</p>	
+									<p>Though humanity has achieved incredible progress, we have taken the Earth for granted, destabilizing the very systems upon which we rely for survival. Covid-19, which almost certainly sprang to humans from animals, offers a glimpse of our future, in which the strain on our planet mirrors the strain facing societies. It took Covid-19 very little time to expose and exploit overlapping inequalities, as well as weaknesses in social, economic, and political systems, and threaten reversals in human development.</p>	
+
+									<div class="b--media-a">
+										<img src="./img/flowers.jpg" width="100%" alt>
 									</div>
-								</div>
-							</section>
-			
-							<section class="b--section-a">
-								<div class="f--container">
-									<div class="f--row">
-										<div class="f--col-12 text-center">
-											<div class="b--content-a">
-												<div class="b--media-a">
-													<p class="b--bt-a">Lottie, working from JS and must be seen:</p>
-													<div class="b--lottie-a lottie" data-anim-loop="true" data-name="ninja" data-animation-path="./img/lotties/9744-sample-animation.json"></div>
-													<!-- Slider main container -->
-													<div class="swiper">
-														<!-- Additional required wrapper -->
-														<div class="swiper-wrapper">
-															<!-- Slides -->
-															<div class="swiper-slide">Slide 1</div>
-															<div class="swiper-slide">Slide 2</div>
-															<div class="swiper-slide">Slide 3</div>
-														</div>
-														<!-- If we need pagination -->
-														<div class="swiper-pagination"></div>
-													</div>
-												</div>
+
+									<div class="swiper" style="margin-top: 20px;">
+										<!-- Additional required wrapper -->
+										<div class="swiper-wrapper">
+											<!-- Slides -->
+											<div class="swiper-slide">
+												<a href="index.html">Home</a>
+											</div>
+											<div class="swiper-slide">
+												<a href="part-1.html">Part 1</a>
 											</div>
 										</div>
-									</div>		
-								</div>
-							</section>
-							<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-							<div class="js--observe"></div>
-							<a href="part-1.html" class="b--cta-a" style="background-image: url('img/flowers.jpg');">
-								<div class="f--container">
-									<div class="f--row">
-										<div class="f--col-6 f--offset-6 f--col-mobile-12 f--offset-mobile-0">
-											<div class="b--cta-a__content">
-												<p class="b--cta-a__content__subtitle">Next page cta</p>
-											</div>
-										</div>
+										<!-- If we need pagination -->
+										<div class="swiper-pagination"></div>
 									</div>
 								</div>
-							</a>
-			
+
+								
+							</div>
 						</div>
 					</div>
 				</div>
