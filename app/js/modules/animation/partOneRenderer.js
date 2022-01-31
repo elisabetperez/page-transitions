@@ -1,7 +1,7 @@
 import Highway from "@dogstudio/highway";
 import Swiper from "./../../../../node_modules/swiper/swiper-bundle.js";
 
-class IntroRenderer extends Highway.Renderer {
+class PartOneRenderer extends Highway.Renderer {
 
 	onEnter() {
 		console.log("onEnter Intro");
@@ -65,5 +65,4 @@ class IntroRenderer extends Highway.Renderer {
     }  
 }
 
-export default IntroRenderer;
-// new IntroRenderer();
+export default PartOneRenderer;

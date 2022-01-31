@@ -5,13 +5,15 @@ import IntroTransition from './modules/animation/introTransition.js';
 import PartOneTransition from './modules/animation/partOneTransition.js';
 import IndexRenderer from './modules/animation/indexRenderer.js';
 import IntroRenderer from './modules/animation/introRenderer.js';
+import PartOneRenderer from './modules/animation/partOneRenderer.js';
 
 class Common { 
     constructor(){ 
         const H = new Highway.Core({
             renderers: {
                 index: IndexRenderer,
-                intro: IntroRenderer
+                intro: IntroRenderer,
+                part: PartOneRenderer
             },
             transitions: {
                 index: HomeTransition,
