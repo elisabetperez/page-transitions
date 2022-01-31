@@ -2,12 +2,14 @@
     position: relative;
     padding: $measure*3 0;
     height: 100vh;
-    color: black;
+    color: white;
     @media all and ($viewport-type: $tabletl) {
         height: 100%;
     }
     &__ft-items{
         padding: $measure*12 0;
+        padding-bottom: $measure*2!important;
+
         @media all and ($viewport-type: $tabletl) {
             padding: $measure*4 0;
             text-align: center;

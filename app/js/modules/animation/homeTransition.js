@@ -1,7 +1,6 @@
 import Highway from '@dogstudio/highway';
 import { gsap,timeline } from 'gsap';
 
-const loader = document.querySelector('.loader');
 
 class HomeTransition extends Highway.Transition{
     in({from, to, done}){
@@ -12,8 +11,8 @@ class HomeTransition extends Highway.Transition{
     }
 
     out({from, done}){
-            gsap.to(from, {
-                opacity: 0,
+            gsap.to(document.querySelector('.loader'), {
+                opacity: 1,
                 duration: 2.5,
                 ease: "power2.out",
                 onComplete: () => {

@@ -1,17 +1,18 @@
 .b--scroll-a{
     display: flex;
     align-items: center;
+    margin-top: $measure*2;
     @media all and ($viewport-type: $tabletl) {
         display: none;
     }
     &__title{
         display: inline-block;
-        @include make-font-e();
-        color: black;
+        @include make-font-h();
+        color: white;
         padding-right: $measure;
     }
     &__artwork{
-        fill: black;
+        fill: white;
         width: $measure*4;
     }
 }
