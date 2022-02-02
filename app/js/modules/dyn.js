@@ -1,11 +1,14 @@
-console.log('dynamic observer');
+import postscribe from 'postscribe';
+
 class Dyn { 
     constructor(){
         this.init();
     }
 
     init(){
-        console.log('Dyn!!');
+        console.log('dynamic observer/ postscribe');
+        postscribe('#introDiv', '<h1>Dynamic PostScribe</h1>');
+
     }
 
   

@@ -22,6 +22,7 @@
     "gsap": "^3.5.1",
     "lottie-web": "^5.8.1",
     "nodelist-foreach-polyfill": "^1.2.0",
+    "postscribe": "^2.0.8",
     "promise-polyfill": "8.2.0",
     "swiper": "^7.4.1",
     "tiny-slider": "^2.9.4"

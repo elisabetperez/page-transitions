@@ -70,4 +70,21 @@
   pointer-events: none;
 }
 
- 
+.box {
+  fill: #9A572D;
+}
+
+.box-gs {
+  width: 250px;
+  height: 250px;
+  background-color: #A7E8BD;
+}
+
+#content {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
