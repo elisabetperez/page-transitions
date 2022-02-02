@@ -3,9 +3,17 @@ import Highway from '@dogstudio/highway';
 import HomeTransition from './modules/animation/homeTransition.js';
 import IntroTransition from './modules/animation/introTransition.js';
 import PartOneTransition from './modules/animation/partOneTransition.js';
+import PartTwoTransition from './modules/animation/partTwoTransition.js';
 import IndexRenderer from './modules/animation/indexRenderer.js';
 import IntroRenderer from './modules/animation/introRenderer.js';
 import PartOneRenderer from './modules/animation/partOneRenderer.js';
+import PartTwoRenderer from './modules/animation/partTwoRenderer.js';
+import PartThreeRenderer from './modules/animation/partThreeRenderer';
+import PartThreeTransition from './modules/animation/partThreeTransition';
+import PartFourRenderer from './modules/animation/partFourRenderer';
+import PartFourTransition from './modules/animation/partFourTransition';
+import PartFiveRenderer from './modules/animation/partFiveRenderer';
+import PartFiveTransition from './modules/animation/partFiveTransition';
 
 class Common { 
     constructor(){ 
@@ -13,12 +21,20 @@ class Common {
             renderers: {
                 index: IndexRenderer,
                 intro: IntroRenderer,
-                part: PartOneRenderer
+                one: PartOneRenderer,
+                two: PartTwoRenderer,
+                three: PartThreeRenderer,
+                four: PartFourRenderer,
+                five: PartFiveRenderer,
             },
             transitions: {
                 index: HomeTransition,
                 intro: IntroTransition,
-                part: PartOneTransition,
+                one: PartOneTransition,
+                two: PartTwoTransition,
+                three: PartThreeTransition,
+                four: PartFourTransition,
+                five: PartFiveTransition,
             }
         });
         H.on('NAVIGATE_END', ({ to, from, trigger, location }) => {

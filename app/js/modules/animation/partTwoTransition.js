@@ -1,10 +1,10 @@
 import Highway from '@dogstudio/highway';
 import { gsap,timeline } from 'gsap';
 
-class PartOneTransition extends Highway.Transition{
+class PartTwoTransition extends Highway.Transition{
     in({from, to, done}){
         gsap.set(document.querySelector(".b--hero-a"), {opacity: 0});
-        gsap.set(document.querySelector('.loader.one'), {opacity: 1});
+        gsap.set(document.querySelector('.loader.two'), {opacity: 1});
 
         gsap.to(document.querySelector(".b--hero-a"), {
             opacity: 1,
@@ -15,7 +15,7 @@ class PartOneTransition extends Highway.Transition{
                 done();
                 window.scrollTo(0, 0);
                 setTimeout(() => {
-                    gsap.to(document.querySelector('.loader.one'), {duration: 1, opacity: 0});
+                    gsap.to(document.querySelector('.loader.two'), {duration: 1, opacity: 0});
                 }, 1000);
             }
         });
@@ -23,7 +23,7 @@ class PartOneTransition extends Highway.Transition{
 
     out({from, done}){
         window.scrollTo(0, 0);
-        gsap.to(document.querySelector('.loader.one'), {
+        gsap.to(document.querySelector('.loader.two'), {
             opacity: 1,
             duration: 1,
             ease: "power2.out",
@@ -36,4 +36,4 @@ class PartOneTransition extends Highway.Transition{
     }
 }
 
-export default PartOneTransition; 
+export default PartTwoTransition; 

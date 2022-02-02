@@ -1,16 +1,16 @@
 import Highway from "@dogstudio/highway";
 import Swiper from "./../../../../node_modules/swiper/swiper-bundle.js";
 
-class PartOneRenderer extends Highway.Renderer {
+class PartFiveRenderer extends Highway.Renderer {
 
 	onEnter() {
-		console.log("onEnter One");
+		console.log("onEnter Five");
 		console.log(this.wrap);
 		
 	}
 
 	onEnterCompleted() {
-		console.log("onEnterCompleted One");
+		console.log("onEnterCompleted Five");
 		this.observeDiv();
 		const swiper = new Swiper('.swiper', {
 			// Optional parameters
@@ -26,11 +26,11 @@ class PartOneRenderer extends Highway.Renderer {
 	}
 
 	onLeave() {
-		console.log("onLeave One");
+		console.log("onLeave Five");
 	}
 
 	onLeaveCompleted() {
-		console.log("onLeaveCompleted One");
+		console.log("onLeaveCompleted Five");
 	}
 
 	observeDiv(){
@@ -65,4 +65,4 @@ class PartOneRenderer extends Highway.Renderer {
     }  
 }
 
-export default PartOneRenderer;
+export default PartFiveRenderer;
