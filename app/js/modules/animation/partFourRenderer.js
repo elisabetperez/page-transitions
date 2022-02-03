@@ -1,5 +1,8 @@
 import Highway from "@dogstudio/highway";
 import Swiper from "./../../../../node_modules/swiper/swiper-bundle.js";
+import { gsap,  TimelineMax } from 'gsap';
+import scrollTrigger from './../ScrollTrigger.js';
+gsap.registerPlugin(scrollTrigger);
 
 class PartFourRenderer extends Highway.Renderer {
 
@@ -23,6 +26,33 @@ class PartFourRenderer extends Highway.Renderer {
 			},
 		  
 		  });
+
+		  const text = document.getElementById("text")
+
+      gsap.from(".box-gs", {
+        rotate: 360,
+        scrollTrigger: {
+          onEnter: () => {
+            text.innerText = 'onEnter';
+          },
+          onLeave: () => {
+            text.innerText = 'onLeave';
+          },
+          onEnterBack: () => {
+            text.innerText = 'onEnterBack';
+          },
+          onLeaveBack: () => {
+            text.innerText = 'onLeaveBack';
+          },
+          //onEnter, onLeave, onEnterBack, onLeaveBack
+          toggleActions: "play pause none reset",
+          markers: true,
+          start: 'top center',
+          end: 'bottom 60%',
+          trigger: ".box-gs",
+          scrub: true,
+        }
+      });
 	}
 
 	onLeave() {

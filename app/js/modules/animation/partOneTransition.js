@@ -3,6 +3,8 @@ import { gsap,timeline } from 'gsap';
 
 class PartOneTransition extends Highway.Transition{
     in({from, to, done}){
+        window.scrollTo(0, 0);
+
         gsap.set(document.querySelector(".b--hero-a"), {opacity: 0});
         gsap.set(document.querySelector('.loader.one'), {opacity: 1});
 
@@ -13,7 +15,6 @@ class PartOneTransition extends Highway.Transition{
             onComplete: () => {
                 from.remove();
                 done();
-                window.scrollTo(0, 0);
                 setTimeout(() => {
                     gsap.to(document.querySelector('.loader.one'), {duration: .5, opacity: 0});
                 }, 500);

@@ -4,7 +4,7 @@ import { gsap,timeline } from 'gsap';
 
 class HomeTransition extends Highway.Transition{
     in({from, to, done}){
-
+        window.scrollTo(0, 0);
         gsap.set(document.querySelector(".b--hero-a"), {opacity: 0});
         gsap.set(document.querySelector('.loader.home'), {opacity: 1});
 
@@ -15,7 +15,6 @@ class HomeTransition extends Highway.Transition{
             onComplete: () => {
                 from.remove();
                 done();
-                window.scrollTo(0, 0);
                 setTimeout(() => {
                     gsap.to(document.querySelector('.loader.home'), {duration: .5, opacity: 0});
                 }, 500);
