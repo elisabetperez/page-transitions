@@ -8,15 +8,15 @@ class PartOneTransition extends Highway.Transition{
 
         gsap.to(document.querySelector(".b--hero-a"), {
             opacity: 1,
-            duration: 1,
+            duration: .5,
             ease: "power2.out",
             onComplete: () => {
                 from.remove();
                 done();
                 window.scrollTo(0, 0);
                 setTimeout(() => {
-                    gsap.to(document.querySelector('.loader.one'), {duration: 1, opacity: 0});
-                }, 1000);
+                    gsap.to(document.querySelector('.loader.one'), {duration: .5, opacity: 0});
+                }, 500);
             }
         });
     }
@@ -25,12 +25,12 @@ class PartOneTransition extends Highway.Transition{
         window.scrollTo(0, 0);
         gsap.to(document.querySelector('.loader.one'), {
             opacity: 1,
-            duration: 1,
+            duration: .5,
             ease: "power2.out",
             onComplete: () => {
                 setTimeout(() => {
                     done();
-                }, 1000);
+                }, 500);
             }
         });
     }
